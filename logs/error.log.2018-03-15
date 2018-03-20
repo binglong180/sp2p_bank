@@ -1,0 +1,845 @@
+2018-03-15 17:47:55,725 ERROR ~ 
+
+@77a0d2p8o
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 77905
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@3df6c65c on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 17:47:55,730 ERROR ~ 
+
+@77a0d2p93
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 77910
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:48:03,250 ERROR ~ 
+
+@77a0d2p94
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 85430
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:48:03,251 ERROR ~ 
+
+@77a0d2p95
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 85431
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:52:50,211 ERROR ~ 
+
+@77a0djk5f
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 20524
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@6f4051d1 on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 17:52:50,215 ERROR ~ 
+
+@77a0djk5i
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 20528
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:52:50,773 ERROR ~ 
+
+@77a0djk5j
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 21086
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:52:50,774 ERROR ~ 
+
+@77a0djk5k
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 21087
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:53:35,329 ERROR ~ 
+
+@77a0djk5l
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 65642
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@6f4051d1 on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 17:53:35,330 ERROR ~ 
+
+@77a0djk5o
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 65643
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:53:37,770 ERROR ~ 
+
+@77a0djk5p
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 68083
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:53:37,771 ERROR ~ 
+
+@77a0djk60
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 68084
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:55:54,135 ERROR ~ 
+
+@77a0e466n
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16458
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@3df6c65c on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 17:55:54,140 ERROR ~ 
+
+@77a0e4670
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16463
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:55:54,189 ERROR ~ 
+
+@77a0e4671
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16512
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:55:54,190 ERROR ~ 
+
+@77a0e4672
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16513
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:57:24,987 ERROR ~ 
+
+@77a0e4673
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 107310
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@3df6c65c on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 17:57:24,988 ERROR ~ 
+
+@77a0e4676
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 107311
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:57:25,019 ERROR ~ 
+
+@77a0e4677
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 107342
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 17:57:25,020 ERROR ~ 
+
+@77a0e4678
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 107343
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 18:25:32,156 ERROR ~ 
+
+@77a0i1a92
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 15116
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@57502283 on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 18:25:32,162 ERROR ~ 
+
+@77a0i1a95
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 15122
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 18:25:32,403 ERROR ~ 
+
+@77a0i1a96
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 15363
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 18:25:32,405 ERROR ~ 
+
+@77a0i1a97
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 15365
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 18:26:34,337 ERROR ~ 
+
+@77a0i1a98
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 77297
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@57502283 on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 18:26:34,338 ERROR ~ 
+
+@77a0i1a9b
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 77298
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 18:26:34,363 ERROR ~ 
+
+@77a0i1a9c
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 77323
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 18:26:34,364 ERROR ~ 
+
+@77a0i1a9d
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 77324
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:01:02,778 ERROR ~ 
+
+@77a0mig7j
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 14565
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@4b5ed12c on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 19:01:02,781 ERROR ~ 
+
+@77a0mig7m
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 14568
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:01:02,829 ERROR ~ 
+
+@77a0mig7n
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 14616
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:01:02,829 ERROR ~ 
+
+@77a0mig7o
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 14616
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:03:49,077 ERROR ~ 
+
+@77a0n224b
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 17488
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@57502283 on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 19:03:49,082 ERROR ~ 
+
+@77a0n224e
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 17493
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:03:49,119 ERROR ~ 
+
+@77a0n224f
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 17530
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:03:49,120 ERROR ~ 
+
+@77a0n224g
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 17531
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:18:45,921 ERROR ~ 
+
+@77a0p131h
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 29716
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@5298db1f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 19:18:45,924 ERROR ~ 
+
+@77a0p131k
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 29719
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:18:45,985 ERROR ~ 
+
+@77a0p131l
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 29780
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:18:45,986 ERROR ~ 
+
+@77a0p131m
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 29781
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:29:24,732 ERROR ~ 
+
+@77a0p131n
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 668527
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@5298db1f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 19:29:24,733 ERROR ~ 
+
+@77a0p1320
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 668528
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:29:24,780 ERROR ~ 
+
+@77a0p1321
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 668575
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:29:24,781 ERROR ~ 
+
+@77a0p1322
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 668576
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:32:31,089 ERROR ~ 
+
+@77a10m1ja
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 21632
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@5298db1f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 19:32:31,092 ERROR ~ 
+
+@77a10m1jd
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 21635
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:32:31,139 ERROR ~ 
+
+@77a10m1je
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 21682
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:32:31,140 ERROR ~ 
+
+@77a10m1jf
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 21683
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:44:53,569 ERROR ~ 
+
+@77a12c829
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 35229
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@5298db1f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-15 19:44:53,572 ERROR ~ 
+
+@77a12c82c
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 35232
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:44:53,621 ERROR ~ 
+
+@77a12c82d
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 35281
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-15 19:44:53,622 ERROR ~ 
+
+@77a12c82e
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 35282
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)

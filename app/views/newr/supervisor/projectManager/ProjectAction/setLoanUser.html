@@ -1,0 +1,110 @@
+#{extends 'common/supervisor.html' /}
+#{include 'newr/supervisor/projectManager/projectManagerLeft.control'/}
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".full").css("width",document.body.clientWidth- 200 +"px ");
+});  
+
+$(window).resize(function(){
+	 var onLoadWidth = document.body.clientWidth;
+		$(".full").css("width",document.body.clientWidth- 200 +"px ");
+})
+</script>
+<style>
+.full{float:left; }
+.table01{width:100%;}
+.table01 th,.table01 td{font-size:12px; height:40px; text-align:center; font-weight:normal;}
+.table01 td{ color:#666;}
+.table01 .td_a{ color:#666;}
+.but01{color:#3a7dc0;}
+</style>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="@{'/public/skin/css/layout.css'}" rel="stylesheet" type="text/css">
+<link href="@{'/public/stylesheets/site.css'}" rel="stylesheet" type="text/css">
+<link href="@{'/public/stylesheets/temp.css'}" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="@{'/public/javascripts/jquery-2.0.js'}"></script>
+<script type="text/javascript" src="@{'/public/javascripts/index.js'}"></script>
+<script type="text/javascript" src="@{'/public/javascripts/jquery.json-2.4.min.js'}"></script>
+<script charset="utf-8" src="@{'public/javascripts/ajaxfileupload.js'}"></script>
+<script type="text/javascript" src="@{'/public/javascripts/common.js'}"></script>
+</head>
+<body>
+<div class="full">
+<div class="list_add_items">
+    <div class="data_header">
+        <div class="data_item"><div class="td_title" style=" font-size:18px; font-weight:bold;">添加借款人</div></div>
+        </div>
+         <div class="list_data">
+        #{form @saveLoanUser(), method:'POST', id:'saveLoanUser'}
+             <div class="data_info">
+                <div class="data_item">
+                    <div class="item_title">基本信息</div>
+                    <div class="item_content">
+                        <ul>
+                            <li>
+                                <div class="td_title"><span>*</span>公司名称：</div>
+                                <div class="td_content"><input class="input_title" type="text" name="company" id="company" placeholder=""></div>
+
+                            </li>
+                           <li>
+                                <div class="td_title"><span>*</span>公司地址：</div>
+                                <div class="td_content">
+                                   <input class="input_title" type="text" name="company_address" id="company_address" placeholder="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="td_title">办公电话：</div>
+                                <div class="td_content"><input class="input_title" type="text" id="office_telephone" name ="office_telephone"  placeholder=""></div>
+                            </li>
+                            <li>
+                                <div class="td_title"><span>*</span>传真号码：</div>
+                                <div class="td_content"><input class="input_title" type="text" id="fax_number" name ="fax_number"  placeholder=""></div>
+                            </li>
+                            <li>
+                                <div class="td_title"><span>*</span>税务登记号：</div>
+                                <div class="td_content"><input class="input_title" type="text" id="tax_no" name ="tax_no"  placeholder=""></div>
+                            </li>
+                            <li>
+                                <div class="td_title"><span>*</span>开户银行：</div>
+                                <div class="td_content"><input class="input_title" type="text" id="bank_name" name ="bank_name"  placeholder=""></div>
+                            </li>
+                            <li>
+                                <div class="td_title"><span>*</span>账户名：</div>
+                                <div class="td_content"><input class="input_title" type="text" id="account_name" name ="account_name"  placeholder=""></div>
+                            </li>
+                            <li>
+                                <div class="td_title"><span>*</span>账号：</div>
+                                <div class="td_content"><input class="input_title" type="text" id="account" name ="account"  placeholder=""></div>
+                            </li>
+                            <li>
+                                <div class="td_title"><span>*</span>支行名称：</div>
+                                <div class="td_content"><input class="input_title" type="text" id="branch_bank_name" name ="branch_bank_name"  placeholder=""></div>
+                            </li>
+                             <li>
+                                <div class="td_title"><span>*</span>支行所在省：</div>
+                                <div class="td_content"><input class="input_title" type="text" id="province" name ="province"  placeholder=""></div>
+                            </li>
+                             <li>
+                                <div class="td_title"><span>*</span>支行所在市：</div>
+                                <div class="td_content"><input class="input_title" type="text" id="city" name ="city"  placeholder=""></div>
+                            </li>                                                                                       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_alter">
+            <input class="btn_search" type="submit" value = "保存" >
+
+            </div>
+           #{/form}
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

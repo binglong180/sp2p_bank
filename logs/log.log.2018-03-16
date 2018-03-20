@@ -1,0 +1,1693 @@
+2018-03-16 09:08:18,430 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 09:08:22,565 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 4135
+2018-03-16 09:08:22,687 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 4257
+2018-03-16 09:10:31,504 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 133074
+2018-03-16 09:10:45,096 ERROR ~ 
+
+@77a547783
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 146666
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@50267e5f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:10:45,215 ERROR ~ 
+
+@77a547786
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 146785
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:10:45,868 ERROR ~ 
+
+@77a547787
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 147438
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@50267e5f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:10:45,869 ERROR ~ 
+
+@77a54778a
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 147439
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:10:45,943 ERROR ~ 
+
+@77a54778b
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 147513
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:10:45,944 ERROR ~ 
+
+@77a54778c
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 147514
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:11:57,126 ERROR ~ 
+
+@77a54778d
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 218696
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@50267e5f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:11:57,127 ERROR ~ 
+
+@77a54778g
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 218697
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:11:57,160 ERROR ~ 
+
+@77a54778h
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 218730
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:11:57,161 ERROR ~ 
+
+@77a54778i
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 218731
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:13:24,053 ERROR ~ 
+
+@77a54778j
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 305623
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@50267e5f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:13:24,054 ERROR ~ 
+
+@77a54778m
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 305624
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:13:24,105 ERROR ~ 
+
+@77a54778n
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 305675
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:13:24,106 ERROR ~ 
+
+@77a54778o
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 305676
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:13:32,523 ERROR ~ 
+
+@77a54778p
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 314093
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@50267e5f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:13:32,524 ERROR ~ 
+
+@77a547792
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 314094
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:13:32,552 ERROR ~ 
+
+@77a547793
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 314122
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:13:32,553 ERROR ~ 
+
+@77a547794
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 314123
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:17:40,500 ERROR ~ 
+
+@77a547795
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 562070
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@50267e5f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:17:40,501 ERROR ~ 
+
+@77a547798
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 562071
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:17:40,537 ERROR ~ 
+
+@77a547799
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 562107
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:17:40,537 ERROR ~ 
+
+@77a54779a
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 562107
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:18:19,539 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 09:18:19,966 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 427
+2018-03-16 09:18:20,064 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 525
+2018-03-16 09:23:45,081 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 09:23:45,538 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 457
+2018-03-16 09:23:45,649 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 568
+2018-03-16 09:23:53,011 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 7930
+2018-03-16 09:24:02,751 ERROR ~ 
+
+@77a560hnm
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 17670
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@5298db1f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:24:02,756 ERROR ~ 
+
+@77a560hnp
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 17675
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:24:02,805 ERROR ~ 
+
+@77a560ho0
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 17724
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:24:02,806 ERROR ~ 
+
+@77a560ho1
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 17725
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:35:01,495 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 09:35:01,965 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 470
+2018-03-16 09:35:02,080 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 585
+2018-03-16 09:35:20,463 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 18968
+2018-03-16 09:35:30,540 ERROR ~ 
+
+@77a57dl8g
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 29045
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@5298db1f on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:35:30,542 ERROR ~ 
+
+@77a57dl8j
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 29047
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:35:30,613 ERROR ~ 
+
+@77a57dl8k
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 29118
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:35:30,614 ERROR ~ 
+
+@77a57dl8l
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 29119
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:55:24,294 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 09:55:24,726 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 432
+2018-03-16 09:55:24,836 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 542
+2018-03-16 09:55:30,123 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 5829
+2018-03-16 09:55:39,430 ERROR ~ 
+
+@77a5a4fhp
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 15136
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@57502283 on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:55:39,433 ERROR ~ 
+
+@77a5a4fi2
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 15139
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:55:39,470 ERROR ~ 
+
+@77a5a4fi3
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 15176
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:55:39,471 ERROR ~ 
+
+@77a5a4fi4
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 15177
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:56:11,750 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 09:56:12,230 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 480
+2018-03-16 09:56:12,331 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 581
+2018-03-16 09:56:18,700 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 6950
+2018-03-16 09:56:28,134 ERROR ~ 
+
+@77a5a79k5
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16384
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@6f4051d1 on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 09:56:28,137 ERROR ~ 
+
+@77a5a79k8
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16387
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:56:28,175 ERROR ~ 
+
+@77a5a79k9
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16425
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 09:56:28,175 ERROR ~ 
+
+@77a5a79ka
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16425
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 10:01:36,781 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 10:01:37,233 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 452
+2018-03-16 10:01:37,338 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 557
+2018-03-16 10:01:45,708 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 8927
+2018-03-16 10:01:55,033 ERROR ~ 
+
+@77a5app8l
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 18252
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@2da8b2de on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 10:01:55,036 ERROR ~ 
+
+@77a5app8o
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 18255
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 10:01:55,083 ERROR ~ 
+
+@77a5app8p
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 18302
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 10:01:55,084 ERROR ~ 
+
+@77a5app90
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 18303
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 10:05:40,885 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 10:05:41,358 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 473
+2018-03-16 10:05:41,493 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 608
+2018-03-16 10:05:47,017 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 6132
+2018-03-16 10:05:57,796 ERROR ~ 
+
+@77a5bdkd7
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_platform_details
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16911
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@2da8b2de on models.t_platform_details
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_platform_details
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 10:05:57,799 ERROR ~ 
+
+@77a5bdkda
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16914
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 10:05:57,835 ERROR ~ 
+
+@77a5bdkdb
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16950
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve404(PlayHandler.java:691)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 10:05:57,836 ERROR ~ 
+
+@77a5bdkdc
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 16951
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:192)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 10:23:08,179 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 10:23:09,293 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1114
+2018-03-16 10:23:09,402 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1223
+2018-03-16 10:23:20,142 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 11963
+2018-03-16 10:23:57,977 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 49798
+2018-03-16 10:24:00,631 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 52452
+2018-03-16 10:24:01,212 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 53033
+2018-03-16 10:24:01,824 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 53645
+2018-03-16 10:24:02,010 ERROR ~ 
+
+@77a5dndeg
+Error during job execution (jobs.Bootstrap)
+
+Oops: VerifyError
+An unexpected error occured caused by exception VerifyError: Inconsistent stackmap frames at branch target 138 Exception Details:   Location:     business/newr/User.withdrawalFee(D)D @65: ifle   Reason:     Current frame's stack size doesn't match stackmap.   Current Frame:     bci: @65     flags: { }     locals: { double, double_2nd, 'business/BackstageSet', 'business/BackstageSet', double, double_2nd }     stack: { double, double_2nd, integer }   Stackmap Frame:     bci: @138     flags: { }     locals: { double, double_2nd }     stack: { top, double, double_2nd }   Bytecode:     0000000: b805 3f4d 2c4e 0336 042d 131a 6413 1a66     0000010: 131a 68b8 1a6a c003 82b6 1a6c 3604 1504     0000020: 8726 2c4e 0e39 042d 131a 6d13 1a6e 131a     0000030: 6fb8 1a71 c000 6cb6 1a73 3904 1804 670e     0000040: 979e 0049 262c 4e0e 3904 2d13 1a74 131a     0000050: 7513 1a76 b81a 78c0 006c b61a 7a39 0418     0000060: 0467 2c4e 0e39 042d 131a 7b13 1a7c 131a     0000070: 7db8 1a7f c000 6cb6 1a81 3904 1804 6b14     0000080: 054e 6f05 b805 50a7 0004 0e63 af          Stackmap Table:     full_frame(@138,{Double},{Top,Double})     full_frame(@139,{Double},{Top,Double,Top}) 
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 53831
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:244)
+	at play.jobs.Job.onException(Job.java:124)
+	at play.jobs.Job.call(Job.java:163)
+	at Invocation.Job(Play!)
+Caused by: java.lang.VerifyError: Inconsistent stackmap frames at branch target 138
+Exception Details:
+  Location:
+    business/newr/User.withdrawalFee(D)D @65: ifle
+  Reason:
+    Current frame's stack size doesn't match stackmap.
+  Current Frame:
+    bci: @65
+    flags: { }
+    locals: { double, double_2nd, 'business/BackstageSet', 'business/BackstageSet', double, double_2nd }
+    stack: { double, double_2nd, integer }
+  Stackmap Frame:
+    bci: @138
+    flags: { }
+    locals: { double, double_2nd }
+    stack: { top, double, double_2nd }
+  Bytecode:
+    0000000: b805 3f4d 2c4e 0336 042d 131a 6413 1a66
+    0000010: 131a 68b8 1a6a c003 82b6 1a6c 3604 1504
+    0000020: 8726 2c4e 0e39 042d 131a 6d13 1a6e 131a
+    0000030: 6fb8 1a71 c000 6cb6 1a73 3904 1804 670e
+    0000040: 979e 0049 262c 4e0e 3904 2d13 1a74 131a
+    0000050: 7513 1a76 b81a 78c0 006c b61a 7a39 0418
+    0000060: 0467 2c4e 0e39 042d 131a 7b13 1a7c 131a
+    0000070: 7db8 1a7f c000 6cb6 1a81 3904 1804 6b14
+    0000080: 054e 6f05 b805 50a7 0004 0e63 af       
+  Stackmap Table:
+    full_frame(@138,{Double},{Top,Double})
+    full_frame(@139,{Double},{Top,Double,Top})
+
+	at business.BackstageSet.<clinit>(BackstageSet.java:178)
+	at jobs.Bootstrap.doJob(Bootstrap.java:21)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+2018-03-16 10:24:03,808 ERROR ~ 
+
+@77a5dndeh
+Internal Server Error (500) for request GET /
+
+Oops: VerifyError
+An unexpected error occured caused by exception VerifyError: Inconsistent stackmap frames at branch target 138 Exception Details:   Location:     business/newr/User.withdrawalFee(D)D @65: ifle   Reason:     Current frame's stack size doesn't match stackmap.   Current Frame:     bci: @65     flags: { }     locals: { double, double_2nd, 'business/BackstageSet', 'business/BackstageSet', double, double_2nd }     stack: { double, double_2nd, integer }   Stackmap Frame:     bci: @138     flags: { }     locals: { double, double_2nd }     stack: { top, double, double_2nd }   Bytecode:     0000000: b805 3f4d 2c4e 0336 042d 131a 6413 1a66     0000010: 131a 68b8 1a6a c003 82b6 1a6c 3604 1504     0000020: 8726 2c4e 0e39 042d 131a 6d13 1a6e 131a     0000030: 6fb8 1a71 c000 6cb6 1a73 3904 1804 670e     0000040: 979e 0049 262c 4e0e 3904 2d13 1a74 131a     0000050: 7513 1a76 b81a 78c0 006c b61a 7a39 0418     0000060: 0467 2c4e 0e39 042d 131a 7b13 1a7c 131a     0000070: 7db8 1a7f c000 6cb6 1a81 3904 1804 6b14     0000080: 054e 6f05 b805 50a7 0004 0e63 af          Stackmap Table:     full_frame(@138,{Double},{Top,Double})     full_frame(@139,{Double},{Top,Double,Top}) 
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 55629
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.JobsPlugin.afterApplicationStart(JobsPlugin.java:131)
+	at play.plugins.PluginCollection.afterApplicationStart(PluginCollection.java:531)
+	at play.Play.start(Play.java:554)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.VerifyError: Inconsistent stackmap frames at branch target 138
+Exception Details:
+  Location:
+    business/newr/User.withdrawalFee(D)D @65: ifle
+  Reason:
+    Current frame's stack size doesn't match stackmap.
+  Current Frame:
+    bci: @65
+    flags: { }
+    locals: { double, double_2nd, 'business/BackstageSet', 'business/BackstageSet', double, double_2nd }
+    stack: { double, double_2nd, integer }
+  Stackmap Frame:
+    bci: @138
+    flags: { }
+    locals: { double, double_2nd }
+    stack: { top, double, double_2nd }
+  Bytecode:
+    0000000: b805 3f4d 2c4e 0336 042d 131a 6413 1a66
+    0000010: 131a 68b8 1a6a c003 82b6 1a6c 3604 1504
+    0000020: 8726 2c4e 0e39 042d 131a 6d13 1a6e 131a
+    0000030: 6fb8 1a71 c000 6cb6 1a73 3904 1804 670e
+    0000040: 979e 0049 262c 4e0e 3904 2d13 1a74 131a
+    0000050: 7513 1a76 b81a 78c0 006c b61a 7a39 0418
+    0000060: 0467 2c4e 0e39 042d 131a 7b13 1a7c 131a
+    0000070: 7db8 1a7f c000 6cb6 1a81 3904 1804 6b14
+    0000080: 054e 6f05 b805 50a7 0004 0e63 af       
+  Stackmap Table:
+    full_frame(@138,{Double},{Top,Double})
+    full_frame(@139,{Double},{Top,Double,Top})
+
+	at business.BackstageSet.<clinit>(BackstageSet.java:178)
+	at jobs.Bootstrap.doJob(Bootstrap.java:21)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+2018-03-16 10:29:06,503 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 10:29:07,715 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1212
+2018-03-16 10:29:07,849 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1346
+2018-03-16 10:29:13,678 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 7175
+2018-03-16 10:29:23,200 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 16697
+2018-03-16 10:29:25,248 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 18745
+2018-03-16 10:29:25,671 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 19168
+2018-03-16 10:29:25,771 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 19268
+2018-03-16 10:29:25,802 DEBUG ~ select t_dict_ad_0_.id as id21_, t_dict_ad_0_.name as name21_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 19299
+2018-03-16 10:29:25,916 DEBUG ~ select t_dict_ad_0_.id as id60_, t_dict_ad_0_.name as name60_, t_dict_ad_0_.province_id as province3_60_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 19413
+2018-03-16 10:29:26,216 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 19713
+2018-03-16 10:29:26,638 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20135
+2018-03-16 10:29:26,998 WARN  ~ SQL Error: 0, SQLState: S0022  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:233) ~ org.hibernate.util.JDBCExceptionReporter ~ 20495
+2018-03-16 10:29:26,999 ERROR ~ Column 'bonus' not found.  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:234) ~ org.hibernate.util.JDBCExceptionReporter ~ 20496
+2018-03-16 10:29:28,567 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 22064
+2018-03-16 10:29:28,729 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 22226
+2018-03-16 10:29:28,732 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 22229
+2018-03-16 10:33:40,876 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 10:33:41,972 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1096
+2018-03-16 10:33:42,088 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1212
+2018-03-16 10:34:51,341 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 70465
+2018-03-16 10:35:00,962 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 80086
+2018-03-16 10:35:03,074 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 82198
+2018-03-16 10:35:03,550 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 82674
+2018-03-16 10:35:03,642 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 82766
+2018-03-16 10:35:03,668 DEBUG ~ select t_dict_ad_0_.id as id21_, t_dict_ad_0_.name as name21_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 82792
+2018-03-16 10:35:03,676 DEBUG ~ select t_dict_ad_0_.id as id60_, t_dict_ad_0_.name as name60_, t_dict_ad_0_.province_id as province3_60_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 82800
+2018-03-16 10:35:03,975 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 83099
+2018-03-16 10:35:04,084 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 83208
+2018-03-16 10:35:04,095 WARN  ~ SQL Error: 0, SQLState: S0022  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:233) ~ org.hibernate.util.JDBCExceptionReporter ~ 83219
+2018-03-16 10:35:04,095 ERROR ~ Column 'bonus' not found.  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:234) ~ org.hibernate.util.JDBCExceptionReporter ~ 83219
+2018-03-16 10:35:05,270 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 84394
+2018-03-16 10:35:05,275 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 84399
+2018-03-16 10:35:05,278 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 84402
+2018-03-16 10:35:22,809 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 101933
+2018-03-16 10:35:22,811 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 101935
+2018-03-16 10:35:22,818 WARN  ~ SQL Error: 0, SQLState: S0022  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:233) ~ org.hibernate.util.JDBCExceptionReporter ~ 101942
+2018-03-16 10:35:22,818 ERROR ~ Column 'bonus' not found.  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:234) ~ org.hibernate.util.JDBCExceptionReporter ~ 101942
+2018-03-16 10:35:22,827 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 101951
+2018-03-16 10:35:22,829 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 101953
+2018-03-16 10:35:22,831 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 101955
+2018-03-16 10:43:47,665 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 10:43:48,745 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1080
+2018-03-16 10:43:48,866 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1201
+2018-03-16 10:43:53,246 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 5581
+2018-03-16 10:44:05,299 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 17634
+2018-03-16 10:44:07,380 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 19715
+2018-03-16 10:44:07,821 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20156
+2018-03-16 10:44:07,932 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20267
+2018-03-16 10:44:07,963 DEBUG ~ select t_dict_ad_0_.id as id21_, t_dict_ad_0_.name as name21_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20298
+2018-03-16 10:44:07,975 DEBUG ~ select t_dict_ad_0_.id as id60_, t_dict_ad_0_.name as name60_, t_dict_ad_0_.province_id as province3_60_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20310
+2018-03-16 10:44:08,301 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 20636
+2018-03-16 10:44:08,423 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20758
+2018-03-16 10:44:08,476 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20811
+2018-03-16 10:44:09,706 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 22041
+2018-03-16 10:44:09,709 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 22044
+2018-03-16 10:44:09,711 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 22046
+2018-03-16 10:47:03,553 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 10:47:04,620 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1067
+2018-03-16 10:47:04,738 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1185
+2018-03-16 10:47:09,163 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 5610
+2018-03-16 10:47:19,236 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 15683
+2018-03-16 10:47:21,360 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 17807
+2018-03-16 10:47:21,849 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 18296
+2018-03-16 10:47:21,970 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 18417
+2018-03-16 10:47:21,994 DEBUG ~ select t_dict_ad_0_.id as id21_, t_dict_ad_0_.name as name21_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 18441
+2018-03-16 10:47:22,004 DEBUG ~ select t_dict_ad_0_.id as id60_, t_dict_ad_0_.name as name60_, t_dict_ad_0_.province_id as province3_60_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 18451
+2018-03-16 10:47:22,246 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 18693
+2018-03-16 10:47:22,365 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 18812
+2018-03-16 10:47:22,384 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 18831
+2018-03-16 10:47:23,453 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 19900
+2018-03-16 10:47:23,456 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 19903
+2018-03-16 10:47:23,458 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 19905
+2018-03-16 10:48:39,229 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.immediatelyInvest  ~ play.Logger.debug(Logger.java:232) ~ play ~ 95676
+2018-03-16 10:48:39,288 DEBUG ~ select t_bids0_.id as id47_0_, t_bids0_.amount as amount47_0_, t_bids0_.apr as apr47_0_, t_bids0_.audit_suggest as audit4_47_0_, t_bids0_.audit_time as audit5_47_0_, t_bids0_.award_scale as award6_47_0_, t_bids0_.bank_account_id as bank7_47_0_, t_bids0_.bid_no as bid8_47_0_, t_bids0_.client as client47_0_, t_bids0_.description as descrip10_47_0_, t_bids0_.guarantee_bid as guarantee11_47_0_, t_bids0_.has_invested_amount as has12_47_0_, t_bids0_.has_settle_amount as has13_47_0_, t_bids0_.image_filename as image14_47_0_, t_bids0_.intermediary_agreement as interme15_47_0_, t_bids0_.invest_expire_time as invest16_47_0_, t_bids0_.invest_period as invest17_47_0_, t_bids0_.invest_rate as invest18_47_0_, t_bids0_.ips_bill_no as ips19_47_0_, t_bids0_.last_repay_time as last20_47_0_, t_bids0_.loan_purpose_id as loan21_47_0_, t_bids0_.loan_schedule as loan22_47_0_, t_bids0_.max_loan as max23_47_0_, t_bids0_.mer_bill_no as mer24_47_0_, t_bids0_.min_invest_amount as min25_47_0_, t_bids0_.overdue_rate as overdue26_47_0_, t_bids0_.pact as pact47_0_, t_bids0_.period as period47_0_, t_bids0_.period_unit as period29_47_0_, t_bids0_.product_id as product30_47_0_, t_bids0_.qr_code as qr31_47_0_, t_bids0_.real_invest_expire_time as real32_47_0_, t_bids0_.repayment_time as repayment33_47_0_, t_bids0_.repayment_type_id as repayment34_47_0_, t_bids0_.service_fees as service35_47_0_, t_bids0_.status as status47_0_, t_bids0_.time as time47_0_, t_bids0_.title as title47_0_, t_bids0_.type as type47_0_, t_bids0_.user_id as user40_47_0_, t_bids0_.version as version47_0_ from t_bids t_bids0_ where t_bids0_.id=?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 95735
+2018-03-16 10:48:39,316 DEBUG ~ select `t_invests`.`id` AS `id`,`t_bids`.`title` AS `title`,`t_invests`.`time` AS `time`,`t_invests`.`amount` AS `invest_amount`,`t_bids`.`amount` AS `bid_amount`,`t_bids`.`apr` AS `apr`,`t_bids`.`status` AS `status`,`t_invests`.`status` AS `transfer_status`,`t_users`.`name` AS `name`,`t_invests`.`bid_id` AS `bid_id`,`t_invests`.`user_id` AS `user_id`,`bid_user`.`name` AS `bid_user_name`,concat(`t_system_options`.`_value`,(`t_invests`.`bid_id` + '')) AS `no`,(select count(`t_bid_questions`.`id`) AS `count(id)` from `t_bid_questions` where ((`t_bid_questions`.`bid_id` = `t_invests`.`bid_id`) and (`t_bid_questions`.`user_id` = `t_invests`.`user_id`))) AS `question_count`,(select count(`t_bid_answers`.`id`) AS `count(id)` from `t_bid_answers` where `t_bid_answers`.`bid_question_id` in (select `t_bid_questions`.`id` AS `id` from `t_bid_questions` where ((`t_bid_questions`.`bid_id` = `t_invests`.`bid_id`) and (`t_bid_questions`.`user_id` = `t_invests`.`user_id`)))) AS `answer_count` from ((((`t_invests` left join `t_bids` on((`t_bids`.`id` = `t_invests`.`bid_id`))) join `t_system_options`) left join `t_users` on((`t_users`.`id` = `t_invests`.`user_id`))) left join `t_users` `bid_user` on((`bid_user`.`id` = `t_bids`.`user_id`))) where (`t_system_options`.`_key` = 'loan_number')  and bid_id = ? order by time desc  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 95763
+2018-03-16 10:48:39,378 DEBUG ~ select count(1) as result  from ((((`t_invests` left join `t_bids` on((`t_bids`.`id` = `t_invests`.`bid_id`))) join `t_system_options`) left join `t_users` on((`t_users`.`id` = `t_invests`.`user_id`))) left join `t_users` `bid_user` on((`bid_user`.`id` = `t_bids`.`user_id`))) where (`t_system_options`.`_key` = 'loan_number')  and bid_id = ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 95825
+2018-03-16 10:48:41,431 DEBUG ~ select t_dict_bid0_.name as col_0_0_ from t_dict_bid_repayment_types t_dict_bid0_ where t_dict_bid0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 97878
+2018-03-16 10:48:41,748 ERROR ~ 
+
+@77a5h3i3e
+Internal Server Error (500) for request GET /m/immediatelyInvest?bidId=131
+
+No route found (In /app/views/m/front/invest/InvestAction/immediatelyInvest.html around line 256)
+No route able to invoke action m.front.invest.investAction.checkUserStatus was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 98195
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.m.front.invest.InvestAction.immediatelyInvest(InvestAction.java:112)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 10:48:41,936 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investList  ~ play.Logger.debug(Logger.java:232) ~ play ~ 98383
+2018-03-16 10:48:41,941 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 98388
+2018-03-16 10:48:41,972 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 98419
+2018-03-16 10:48:42,477 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 98924
+2018-03-16 10:48:42,479 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 98926
+2018-03-16 10:48:42,484 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 98931
+2018-03-16 10:48:51,343 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 107790
+2018-03-16 10:48:51,344 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 107791
+2018-03-16 10:48:51,565 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 108012
+2018-03-16 10:48:51,567 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 108014
+2018-03-16 10:48:51,569 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 108016
+2018-03-16 10:49:09,838 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.resetPasswordByMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 126285
+2018-03-16 10:49:09,840 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.resetPasswordByMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 126287
+2018-03-16 10:49:10,015 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 126462
+2018-03-16 10:49:10,017 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 126464
+2018-03-16 10:49:10,019 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 126466
+2018-03-16 10:49:33,392 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 149839
+2018-03-16 10:49:33,393 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 149840
+2018-03-16 10:49:33,400 DEBUG ~ select t_users0_.id as id25_, t_users0_.balance as balance25_, t_users0_.business_registration_money as business3_25_, t_users0_.company as company25_, t_users0_.company_address as company5_25_, t_users0_.fax_number as fax6_25_, t_users0_.id_number as id7_25_, t_users0_.mobile as mobile25_, t_users0_.name as name25_, t_users0_.office_telephone as office10_25_, t_users0_.password as password25_, t_users0_.photo as photo25_, t_users0_.postcode as postcode25_, t_users0_.reality_name as reality14_25_, t_users0_.tax_no as tax15_25_, t_users0_.time as time25_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 149847
+2018-03-16 10:49:37,506 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 153953
+2018-03-16 10:49:37,507 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 153954
+2018-03-16 10:49:37,514 DEBUG ~ select t_content_0_.content as col_0_0_ from t_content_news t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 153961
+2018-03-16 10:49:37,826 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 154273
+2018-03-16 10:49:37,829 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 154276
+2018-03-16 10:49:37,830 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 154277
+2018-03-16 10:49:38,124 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 154571
+2018-03-16 10:49:38,126 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 154573
+2018-03-16 10:49:38,445 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 154892
+2018-03-16 10:49:38,456 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 154903
+2018-03-16 10:52:07,208 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyMobileForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 303655
+2018-03-16 10:52:07,209 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyMobileForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 303656
+2018-03-16 10:52:07,217 DEBUG ~ select t_users0_.mobile as col_0_0_ from t_users t_users0_ where t_users0_.mobile=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 303664
+2018-03-16 10:52:07,219 INFO  ~ sms code:1068  ~ play.Logger.info(Logger.java:289) ~ play ~ 303666
+2018-03-16 10:52:45,158 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifySmsCodeForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 341605
+2018-03-16 10:52:45,158 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifySmsCodeForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 341605
+2018-03-16 10:52:45,351 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registering  ~ play.Logger.debug(Logger.java:232) ~ play ~ 341798
+2018-03-16 10:52:45,351 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registering  ~ play.Logger.debug(Logger.java:232) ~ play ~ 341798
+2018-03-16 10:52:45,353 DEBUG ~ select t_users0_.mobile as col_0_0_ from t_users t_users0_ where t_users0_.mobile=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 341800
+2018-03-16 10:52:45,357 DEBUG ~ select t_users0_.name as col_0_0_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 341804
+2018-03-16 10:52:45,409 DEBUG ~ insert into t_users (balance, business_registration_money, company, company_address, fax_number, id_number, mobile, name, office_telephone, password, photo, postcode, reality_name, tax_no, time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 341856
+2018-03-16 10:52:45,457 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 341904
+2018-03-16 10:52:45,469 DEBUG ~ select t_message_0_.id as id39_0_, t_message_0_.content as content39_0_, t_message_0_.scenarios as scenarios39_0_, t_message_0_.size as size39_0_, t_message_0_.status as status39_0_, t_message_0_.time as time39_0_, t_message_0_.title as title39_0_, t_message_0_.type as type39_0_ from t_message_station_templates t_message_0_ where t_message_0_.id=?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 341916
+2018-03-16 10:52:45,484 DEBUG ~ select t_supervis0_.name as col_0_0_ from t_supervisors t_supervis0_ where t_supervis0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 341931
+2018-03-16 10:52:45,663 DEBUG ~ 正在执行ation请求命令：m.front.account.AccountHomeAction.accountHome  ~ play.Logger.debug(Logger.java:232) ~ play ~ 342110
+2018-03-16 10:52:45,665 DEBUG ~ 正在执行ation请求命令：m.front.account.AccountHomeAction.accountHome  ~ play.Logger.debug(Logger.java:232) ~ play ~ 342112
+2018-03-16 10:52:45,666 DEBUG ~ 正在执行ation请求命令：m.front.account.AccountHomeAction.accountHome  ~ play.Logger.debug(Logger.java:232) ~ play ~ 342113
+2018-03-16 10:52:45,795 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 342242
+2018-03-16 10:52:45,797 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 342244
+2018-03-16 10:52:45,799 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 342246
+2018-03-16 10:57:28,078 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logout  ~ play.Logger.debug(Logger.java:232) ~ play ~ 624525
+2018-03-16 10:57:28,079 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logout  ~ play.Logger.debug(Logger.java:232) ~ play ~ 624526
+2018-03-16 10:57:28,094 DEBUG ~ update t_users set last_logout_time=? where id=?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 624541
+2018-03-16 10:57:28,195 WARN  ~ SQL Error: 1054, SQLState: 42S22  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:233) ~ org.hibernate.util.JDBCExceptionReporter ~ 624642
+2018-03-16 10:57:28,195 ERROR ~ Unknown column 'last_logout_time' in 'field list'  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:234) ~ org.hibernate.util.JDBCExceptionReporter ~ 624642
+2018-03-16 10:57:28,202 INFO  ~ 安全退出时,保存安全退出的信息时：org.hibernate.exception.SQLGrammarException: could not execute update query  ~ play.Logger.info(Logger.java:289) ~ play ~ 624649
+2018-03-16 10:57:28,557 ERROR ~ 
+
+@77a5h3i3g
+Internal Server Error (500) for request GET /m/logout
+
+No route found (In /app/views/Application/errorFront.html around line 11)
+No route able to invoke action front.home.HomeAction.home with arguments {} was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 625004
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.m.front.account.LoginAndRegisterAction.logout(LoginAndRegisterAction.java:81)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 10:58:00,660 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 657107
+2018-03-16 10:58:00,662 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 657109
+2018-03-16 10:58:00,668 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 657115
+2018-03-16 10:58:00,678 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 657125
+2018-03-16 10:58:00,680 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 657127
+2018-03-16 10:58:00,681 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 657128
+2018-03-16 10:58:52,187 DEBUG ~ 正在执行ation请求命令：m.front.account.AccountHomeAction.accountHome  ~ play.Logger.debug(Logger.java:232) ~ play ~ 708634
+2018-03-16 10:58:52,188 DEBUG ~ 正在执行ation请求命令：m.front.account.AccountHomeAction.accountHome  ~ play.Logger.debug(Logger.java:232) ~ play ~ 708635
+2018-03-16 10:58:52,188 DEBUG ~ 正在执行ation请求命令：m.front.account.AccountHomeAction.accountHome  ~ play.Logger.debug(Logger.java:232) ~ play ~ 708635
+2018-03-16 10:58:52,193 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 708640
+2018-03-16 10:58:52,195 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 708642
+2018-03-16 10:58:52,197 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 708644
+2018-03-16 10:58:58,376 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 714823
+2018-03-16 10:58:58,377 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 714824
+2018-03-16 10:58:58,383 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 714830
+2018-03-16 10:58:58,393 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 714840
+2018-03-16 10:58:58,395 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 714842
+2018-03-16 10:58:58,396 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 714843
+2018-03-16 10:59:00,318 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investList  ~ play.Logger.debug(Logger.java:232) ~ play ~ 716765
+2018-03-16 10:59:00,320 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 716767
+2018-03-16 10:59:00,348 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 716795
+2018-03-16 10:59:00,380 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 716827
+2018-03-16 10:59:00,382 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 716829
+2018-03-16 10:59:00,383 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 716830
+2018-03-16 10:59:03,315 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 719762
+2018-03-16 10:59:03,415 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 719862
+2018-03-16 10:59:03,516 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 719963
+2018-03-16 10:59:03,616 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 720063
+2018-03-16 10:59:03,714 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 720161
+2018-03-16 10:59:03,812 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 720259
+2018-03-16 10:59:09,292 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 725739
+2018-03-16 10:59:09,293 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 725740
+2018-03-16 10:59:09,302 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 725749
+2018-03-16 10:59:09,327 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 725774
+2018-03-16 10:59:09,328 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 725775
+2018-03-16 11:00:27,244 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 803691
+2018-03-16 11:00:27,245 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 803692
+2018-03-16 11:00:27,247 DEBUG ~ select t_content_0_.content as col_0_0_ from t_content_news t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 803694
+2018-03-16 11:00:27,257 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 803704
+2018-03-16 11:00:27,258 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 803705
+2018-03-16 11:00:27,260 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 803707
+2018-03-16 11:00:27,575 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 804022
+2018-03-16 11:00:27,576 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 804023
+2018-03-16 11:00:27,691 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 804138
+2018-03-16 11:00:27,692 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 804139
+2018-03-16 11:01:33,402 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyMobileForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 869849
+2018-03-16 11:01:33,403 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyMobileForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 869850
+2018-03-16 11:01:33,516 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 869963
+2018-03-16 11:01:33,518 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 869965
+2018-03-16 11:01:33,625 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 870072
+2018-03-16 11:01:33,626 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 870073
+2018-03-16 11:01:46,010 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyMobileForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 882457
+2018-03-16 11:01:46,011 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyMobileForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 882458
+2018-03-16 11:01:46,123 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 882570
+2018-03-16 11:01:46,124 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 882571
+2018-03-16 11:01:46,231 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 882678
+2018-03-16 11:01:46,232 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 882679
+2018-03-16 11:02:02,141 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyMobileForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 898588
+2018-03-16 11:02:02,141 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyMobileForReg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 898588
+2018-03-16 11:02:02,145 DEBUG ~ select t_users0_.mobile as col_0_0_ from t_users t_users0_ where t_users0_.mobile=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 898592
+2018-03-16 11:02:02,147 INFO  ~ sms code:1081  ~ play.Logger.info(Logger.java:289) ~ play ~ 898594
+2018-03-16 11:16:00,191 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1736638
+2018-03-16 11:16:01,527 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1737974
+2018-03-16 11:16:01,560 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1738007
+2018-03-16 11:16:01,579 DEBUG ~ select t_dict_ad_0_.id as id147_, t_dict_ad_0_.name as name147_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1738026
+2018-03-16 11:16:01,588 DEBUG ~ select t_dict_ad_0_.id as id186_, t_dict_ad_0_.name as name186_, t_dict_ad_0_.province_id as province3_186_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1738035
+2018-03-16 11:16:01,653 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1738100
+2018-03-16 11:16:01,661 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1738108
+2018-03-16 11:16:01,667 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1738114
+2018-03-16 11:16:01,826 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1738273
+2018-03-16 11:16:01,828 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1738275
+2018-03-16 11:16:01,830 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1738277
+2018-03-16 11:17:30,930 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1827377
+2018-03-16 11:17:30,931 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1827378
+2018-03-16 11:17:30,951 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1827398
+2018-03-16 11:17:30,953 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1827400
+2018-03-16 11:17:30,954 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1827401
+2018-03-16 11:17:41,907 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1838354
+2018-03-16 11:17:41,907 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1838354
+2018-03-16 11:17:41,912 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1838359
+2018-03-16 11:17:41,914 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1838361
+2018-03-16 11:17:41,915 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1838362
+2018-03-16 11:18:29,537 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.aboutUs  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1885984
+2018-03-16 11:18:29,691 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1886138
+2018-03-16 11:18:29,694 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1886141
+2018-03-16 11:18:29,698 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1886145
+2018-03-16 11:18:36,178 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.security  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1892625
+2018-03-16 11:18:36,266 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1892713
+2018-03-16 11:18:36,268 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1892715
+2018-03-16 11:18:36,270 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1892717
+2018-03-16 11:18:46,729 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1903176
+2018-03-16 11:18:46,731 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1903178
+2018-03-16 11:18:46,735 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1903182
+2018-03-16 11:18:46,746 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1903193
+2018-03-16 11:18:46,749 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1903196
+2018-03-16 11:18:46,750 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1903197
+2018-03-16 11:21:20,856 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2057303
+2018-03-16 11:21:20,857 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2057304
+2018-03-16 11:21:20,864 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2057311
+2018-03-16 11:21:20,873 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2057320
+2018-03-16 11:21:20,875 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2057322
+2018-03-16 11:21:20,878 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2057325
+2018-03-16 11:21:22,387 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2058834
+2018-03-16 11:21:22,388 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2058835
+2018-03-16 11:21:22,393 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2058840
+2018-03-16 11:21:22,394 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2058841
+2018-03-16 11:21:22,396 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2058843
+2018-03-16 11:22:34,054 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2130501
+2018-03-16 11:22:34,055 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2130502
+2018-03-16 11:22:34,063 DEBUG ~ select t_content_0_.content as col_0_0_ from t_content_news t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2130510
+2018-03-16 11:22:34,094 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2130541
+2018-03-16 11:22:34,095 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2130542
+2018-03-16 11:22:34,097 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2130544
+2018-03-16 11:22:34,412 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2130859
+2018-03-16 11:22:34,413 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2130860
+2018-03-16 11:22:34,529 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2130976
+2018-03-16 11:22:34,530 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2130977
+2018-03-16 11:23:15,473 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2171920
+2018-03-16 11:23:15,473 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2171920
+2018-03-16 11:23:15,475 DEBUG ~ select t_content_0_.content as col_0_0_ from t_content_news t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2171922
+2018-03-16 11:23:15,556 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2172003
+2018-03-16 11:23:15,559 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2172006
+2018-03-16 11:23:15,561 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2172008
+2018-03-16 11:23:15,823 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2172270
+2018-03-16 11:23:15,824 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2172271
+2018-03-16 11:23:15,934 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2172381
+2018-03-16 11:23:15,934 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2172381
+2018-03-16 11:54:20,501 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4036948
+2018-03-16 11:54:20,502 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4036949
+2018-03-16 11:54:20,503 DEBUG ~ select t_content_0_.content as col_0_0_ from t_content_news t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 4036950
+2018-03-16 11:54:20,585 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 4037032
+2018-03-16 11:54:20,612 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 4037059
+2018-03-16 11:54:20,614 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 4037061
+2018-03-16 11:54:21,053 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4037500
+2018-03-16 11:54:21,054 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4037501
+2018-03-16 11:54:21,192 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4037639
+2018-03-16 11:54:21,193 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4037640
+2018-03-16 11:54:23,657 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4040104
+2018-03-16 11:54:23,658 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4040105
+2018-03-16 11:54:23,663 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 4040110
+2018-03-16 11:54:23,665 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 4040112
+2018-03-16 11:54:23,667 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 4040114
+2018-03-16 11:54:31,563 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4048010
+2018-03-16 11:54:31,563 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4048010
+2018-03-16 11:54:31,568 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 4048015
+2018-03-16 11:54:36,434 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4052881
+2018-03-16 11:54:36,435 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 4052882
+2018-03-16 11:54:36,437 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 4052884
+2018-03-16 11:55:03,827 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 11:55:05,113 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1286
+2018-03-16 11:55:05,210 ERROR ~ Could not bind on port 9000  ~ play.Logger.error(Logger.java:399) ~ play ~ 1383
+2018-03-16 11:55:28,106 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 11:55:29,273 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1167
+2018-03-16 11:55:29,393 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1287
+2018-03-16 11:55:53,569 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 25463
+2018-03-16 11:56:08,857 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 40751
+2018-03-16 11:56:11,844 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 43738
+2018-03-16 11:56:12,440 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 44334
+2018-03-16 11:56:12,588 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 44482
+2018-03-16 11:56:12,715 DEBUG ~ select t_dict_ad_0_.id as id21_, t_dict_ad_0_.name as name21_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 44609
+2018-03-16 11:56:12,729 DEBUG ~ select t_dict_ad_0_.id as id60_, t_dict_ad_0_.name as name60_, t_dict_ad_0_.province_id as province3_60_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 44623
+2018-03-16 11:56:13,577 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 45471
+2018-03-16 11:56:13,708 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 45602
+2018-03-16 11:58:01,950 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 153844
+2018-03-16 11:58:01,960 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 153854
+2018-03-16 11:58:01,966 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 153860
+2018-03-16 12:03:21,679 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 473573
+2018-03-16 12:03:23,080 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 474974
+2018-03-16 12:03:23,118 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 475012
+2018-03-16 12:03:23,139 DEBUG ~ select t_dict_ad_0_.id as id147_, t_dict_ad_0_.name as name147_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 475033
+2018-03-16 12:03:23,147 DEBUG ~ select t_dict_ad_0_.id as id186_, t_dict_ad_0_.name as name186_, t_dict_ad_0_.province_id as province3_186_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 475041
+2018-03-16 12:03:48,385 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 12:03:49,630 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1245
+2018-03-16 12:03:49,758 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1373
+2018-03-16 12:03:55,369 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 6984
+2018-03-16 12:04:06,490 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 18105
+2018-03-16 12:04:08,718 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 20333
+2018-03-16 12:04:09,200 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20815
+2018-03-16 12:04:09,347 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20962
+2018-03-16 12:04:09,371 DEBUG ~ select t_dict_ad_0_.id as id21_, t_dict_ad_0_.name as name21_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20986
+2018-03-16 12:04:09,380 DEBUG ~ select t_dict_ad_0_.id as id60_, t_dict_ad_0_.name as name60_, t_dict_ad_0_.province_id as province3_60_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 20995
+2018-03-16 12:04:09,661 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 21276
+2018-03-16 12:04:09,710 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 21325
+2018-03-16 12:04:44,681 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 56296
+2018-03-16 12:04:44,720 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 56335
+2018-03-16 12:04:44,725 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 56340
+2018-03-16 12:04:59,221 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 70836
+2018-03-16 12:04:59,224 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 70839
+2018-03-16 12:04:59,236 DEBUG ~ select t_content_0_.content as col_0_0_ from t_content_news t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 70851
+2018-03-16 12:04:59,361 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 70976
+2018-03-16 12:04:59,364 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 70979
+2018-03-16 12:04:59,366 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 70981
+2018-03-16 12:04:59,774 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 71389
+2018-03-16 12:04:59,776 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 71391
+2018-03-16 12:05:00,001 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 71616
+2018-03-16 12:05:00,002 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 71617
+2018-03-16 15:36:43,648 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 15:36:44,776 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1128
+2018-03-16 15:36:44,892 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1244
+2018-03-16 15:37:17,995 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 34347
+2018-03-16 15:37:33,292 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 49644
+2018-03-16 15:37:35,980 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 52332
+2018-03-16 15:37:36,574 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 52926
+2018-03-16 15:37:39,158 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 55510
+2018-03-16 15:37:39,303 DEBUG ~ select t_dict_ad_0_.id as id21_, t_dict_ad_0_.name as name21_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 55655
+2018-03-16 15:37:39,361 DEBUG ~ select t_dict_ad_0_.id as id60_, t_dict_ad_0_.name as name60_, t_dict_ad_0_.province_id as province3_60_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 55713
+2018-03-16 15:37:39,815 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 56167
+2018-03-16 15:37:40,050 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 56402
+2018-03-16 15:37:40,359 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 56711
+2018-03-16 15:37:41,582 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 57934
+2018-03-16 15:37:41,650 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 58002
+2018-03-16 15:37:41,653 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 58005
+2018-03-16 15:49:22,773 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 759125
+2018-03-16 15:49:24,031 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 760383
+2018-03-16 15:49:24,065 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 760417
+2018-03-16 15:49:24,142 DEBUG ~ select t_dict_ad_0_.id as id147_, t_dict_ad_0_.name as name147_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 760494
+2018-03-16 15:49:24,149 DEBUG ~ select t_dict_ad_0_.id as id186_, t_dict_ad_0_.name as name186_, t_dict_ad_0_.province_id as province3_186_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 760501
+2018-03-16 15:49:24,214 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 760566
+2018-03-16 15:49:24,216 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 760568
+2018-03-16 15:49:24,364 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 760716
+2018-03-16 15:49:24,400 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 760752
+2018-03-16 15:49:24,403 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 760755
+2018-03-16 15:50:03,588 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 799940
+2018-03-16 15:50:03,591 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 799943
+2018-03-16 15:50:03,601 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 799953
+2018-03-16 15:50:03,842 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 800194
+2018-03-16 15:50:04,420 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 800772
+2018-03-16 15:50:04,422 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 800774
+2018-03-16 15:50:04,425 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 800777
+2018-03-16 15:50:04,428 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 800780
+2018-03-16 15:50:04,639 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investList  ~ play.Logger.debug(Logger.java:232) ~ play ~ 800991
+2018-03-16 15:50:04,648 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 801000
+2018-03-16 15:50:04,708 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 801060
+2018-03-16 15:50:04,840 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 801192
+2018-03-16 15:50:04,859 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 801211
+2018-03-16 15:50:04,861 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 801213
+2018-03-16 15:50:04,863 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 801215
+2018-03-16 15:50:48,775 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 15:50:49,991 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1216
+2018-03-16 15:50:50,101 ERROR ~ Could not bind on port 9000  ~ play.Logger.error(Logger.java:399) ~ play ~ 1326
+2018-03-16 15:51:08,924 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 865276
+2018-03-16 15:51:08,926 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 865278
+2018-03-16 15:51:08,932 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 865284
+2018-03-16 15:51:08,934 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 865286
+2018-03-16 15:51:08,936 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 865288
+2018-03-16 15:51:23,112 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 879464
+2018-03-16 15:51:23,113 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 879465
+2018-03-16 15:51:23,116 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 879468
+2018-03-16 15:51:29,533 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 885885
+2018-03-16 15:51:29,534 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 885886
+2018-03-16 15:51:29,536 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 885888
+2018-03-16 15:51:29,602 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 885954
+2018-03-16 15:51:29,797 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 886149
+2018-03-16 15:51:29,798 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 886150
+2018-03-16 15:51:29,799 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 886151
+2018-03-16 15:51:29,801 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 886153
+2018-03-16 15:51:29,978 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investList  ~ play.Logger.debug(Logger.java:232) ~ play ~ 886330
+2018-03-16 15:51:29,980 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 886332
+2018-03-16 15:51:29,998 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 886350
+2018-03-16 15:51:30,032 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 886384
+2018-03-16 15:51:30,049 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 886401
+2018-03-16 15:51:30,051 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 886403
+2018-03-16 15:51:30,052 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 886404
+2018-03-16 15:51:35,028 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 891380
+2018-03-16 15:51:35,156 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 891508
+2018-03-16 15:51:35,283 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 891635
+2018-03-16 15:51:35,412 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 891764
+2018-03-16 15:51:35,549 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 891901
+2018-03-16 15:51:35,677 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investListAjax  ~ play.Logger.debug(Logger.java:232) ~ play ~ 892029
+2018-03-16 15:55:32,300 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1128652
+2018-03-16 15:55:32,301 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1128653
+2018-03-16 15:55:32,307 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1128659
+2018-03-16 15:55:32,326 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1128678
+2018-03-16 15:55:32,327 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1128679
+2018-03-16 15:55:32,329 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1128681
+2018-03-16 15:55:45,221 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1141573
+2018-03-16 15:55:45,222 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1141574
+2018-03-16 15:55:45,224 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1141576
+2018-03-16 15:55:45,227 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1141579
+2018-03-16 15:55:45,453 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1141805
+2018-03-16 15:55:45,454 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1141806
+2018-03-16 15:55:45,455 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1141807
+2018-03-16 15:55:45,457 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1141809
+2018-03-16 15:55:45,631 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investList  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1141983
+2018-03-16 15:55:45,632 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1141984
+2018-03-16 15:55:45,648 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1142000
+2018-03-16 15:55:45,688 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1142040
+2018-03-16 15:55:45,713 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1142065
+2018-03-16 15:55:45,715 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1142067
+2018-03-16 15:55:45,718 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1142070
+2018-03-16 15:59:48,765 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1385117
+2018-03-16 15:59:48,766 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1385118
+2018-03-16 15:59:48,772 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1385124
+2018-03-16 15:59:48,834 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1385186
+2018-03-16 15:59:49,146 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1385498
+2018-03-16 15:59:49,147 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1385499
+2018-03-16 16:00:00,126 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1396478
+2018-03-16 16:00:00,127 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1396479
+2018-03-16 16:00:00,129 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396481
+2018-03-16 16:00:00,133 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396485
+2018-03-16 16:00:00,394 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1396746
+2018-03-16 16:00:00,394 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1396746
+2018-03-16 16:00:00,396 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396748
+2018-03-16 16:00:00,399 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396751
+2018-03-16 16:00:00,557 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investList  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1396909
+2018-03-16 16:00:00,558 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396910
+2018-03-16 16:00:00,587 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396939
+2018-03-16 16:00:00,614 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396966
+2018-03-16 16:00:00,628 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396980
+2018-03-16 16:00:00,631 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396983
+2018-03-16 16:00:00,632 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1396984
+2018-03-16 16:01:20,332 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1476684
+2018-03-16 16:01:20,332 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 1476684
+2018-03-16 16:01:20,337 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1476689
+2018-03-16 16:01:20,339 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1476691
+2018-03-16 16:01:20,342 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 1476694
+2018-03-16 16:11:49,611 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2105963
+2018-03-16 16:11:49,612 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2105964
+2018-03-16 16:11:49,614 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2105966
+2018-03-16 16:11:49,617 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2105969
+2018-03-16 16:11:49,872 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2106224
+2018-03-16 16:11:49,873 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2106225
+2018-03-16 16:11:49,874 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2106226
+2018-03-16 16:11:49,889 DEBUG ~ select t_users0_.id as id151_, t_users0_.balance as balance151_, t_users0_.business_registration_money as business3_151_, t_users0_.company as company151_, t_users0_.company_address as company5_151_, t_users0_.fax_number as fax6_151_, t_users0_.id_number as id7_151_, t_users0_.mobile as mobile151_, t_users0_.name as name151_, t_users0_.office_telephone as office10_151_, t_users0_.password as password151_, t_users0_.photo as photo151_, t_users0_.postcode as postcode151_, t_users0_.reality_name as reality14_151_, t_users0_.tax_no as tax15_151_, t_users0_.time as time151_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2106241
+2018-03-16 16:11:49,892 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2106244
+2018-03-16 16:11:50,085 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investList  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2106437
+2018-03-16 16:11:50,086 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2106438
+2018-03-16 16:11:50,169 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2106521
+2018-03-16 16:11:50,195 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2106547
+2018-03-16 16:11:50,208 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2106560
+2018-03-16 16:11:50,210 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2106562
+2018-03-16 16:11:50,211 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2106563
+2018-03-16 16:12:31,827 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 16:12:33,064 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1237
+2018-03-16 16:12:33,178 ERROR ~ Could not bind on port 9000  ~ play.Logger.error(Logger.java:399) ~ play ~ 1351
+2018-03-16 16:13:45,393 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 16:13:46,674 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1281
+2018-03-16 16:13:46,808 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1415
+2018-03-16 16:14:01,883 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 16490
+2018-03-16 16:14:14,060 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 28667
+2018-03-16 16:14:16,579 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 31186
+2018-03-16 16:14:17,163 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 31770
+2018-03-16 16:14:17,274 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 31881
+2018-03-16 16:14:17,303 DEBUG ~ select t_dict_ad_0_.id as id21_, t_dict_ad_0_.name as name21_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 31910
+2018-03-16 16:14:17,313 DEBUG ~ select t_dict_ad_0_.id as id60_, t_dict_ad_0_.name as name60_, t_dict_ad_0_.province_id as province3_60_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 31920
+2018-03-16 16:14:17,621 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investList  ~ play.Logger.debug(Logger.java:232) ~ play ~ 32228
+2018-03-16 16:14:17,736 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 32343
+2018-03-16 16:14:17,798 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 32405
+2018-03-16 16:14:19,131 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 33738
+2018-03-16 16:14:19,137 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 33744
+2018-03-16 16:14:19,139 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 33746
+2018-03-16 16:14:24,647 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 39254
+2018-03-16 16:14:24,650 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 39257
+2018-03-16 16:14:24,667 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 39274
+2018-03-16 16:14:24,730 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 39337
+2018-03-16 16:14:24,732 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 39339
+2018-03-16 16:14:24,735 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 39342
+2018-03-16 16:14:34,602 DEBUG ~ 正在执行ation请求命令：m.front.newHomeAction.home  ~ play.Logger.debug(Logger.java:232) ~ play ~ 49209
+2018-03-16 16:14:34,605 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 49212
+2018-03-16 16:14:34,612 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 49219
+2018-03-16 16:14:34,628 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 49235
+2018-03-16 16:14:34,630 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 49237
+2018-03-16 16:14:34,633 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 49240
+2018-03-16 16:14:43,927 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 58534
+2018-03-16 16:14:43,929 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 58536
+2018-03-16 16:18:10,672 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 265279
+2018-03-16 16:18:10,675 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 265282
+2018-03-16 16:18:10,677 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 265284
+2018-03-16 16:18:22,293 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 276900
+2018-03-16 16:18:23,758 DEBUG ~ select t_system_o0_.id as id162_, t_system_o0_._key as column2_162_, t_system_o0_._value as column3_162_, t_system_o0_.description as descript4_162_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 278365
+2018-03-16 16:18:23,935 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 278542
+2018-03-16 16:18:23,956 DEBUG ~ select t_dict_ad_0_.id as id147_, t_dict_ad_0_.name as name147_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 278563
+2018-03-16 16:18:23,964 DEBUG ~ select t_dict_ad_0_.id as id186_, t_dict_ad_0_.name as name186_, t_dict_ad_0_.province_id as province3_186_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 278571
+2018-03-16 16:18:24,054 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 278661
+2018-03-16 16:18:24,056 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.login  ~ play.Logger.debug(Logger.java:232) ~ play ~ 278663
+2018-03-16 16:24:08,428 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 623035
+2018-03-16 16:24:08,433 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 623040
+2018-03-16 16:24:08,438 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 623045
+2018-03-16 16:24:11,648 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 626255
+2018-03-16 16:24:12,880 DEBUG ~ select t_system_o0_.id as id288_, t_system_o0_._key as column2_288_, t_system_o0_._value as column3_288_, t_system_o0_.description as descript4_288_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 627487
+2018-03-16 16:24:12,921 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 627528
+2018-03-16 16:24:12,950 DEBUG ~ select t_dict_ad_0_.id as id273_, t_dict_ad_0_.name as name273_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 627557
+2018-03-16 16:24:12,960 DEBUG ~ select t_dict_ad_0_.id as id312_, t_dict_ad_0_.name as name312_, t_dict_ad_0_.province_id as province3_312_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 627567
+2018-03-16 16:24:27,596 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 642203
+2018-03-16 16:24:27,598 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 642205
+2018-03-16 16:24:27,606 DEBUG ~ select t_users0_.id as id277_, t_users0_.balance as balance277_, t_users0_.business_registration_money as business3_277_, t_users0_.company as company277_, t_users0_.company_address as company5_277_, t_users0_.fax_number as fax6_277_, t_users0_.id_number as id7_277_, t_users0_.mobile as mobile277_, t_users0_.name as name277_, t_users0_.office_telephone as office10_277_, t_users0_.password as password277_, t_users0_.photo as photo277_, t_users0_.postcode as postcode277_, t_users0_.reality_name as reality14_277_, t_users0_.tax_no as tax15_277_, t_users0_.time as time277_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 642213
+2018-03-16 16:24:27,683 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 642290
+2018-03-16 16:24:27,978 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 642585
+2018-03-16 16:24:27,980 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 642587
+2018-03-16 16:50:38,845 DEBUG ~ select t_users0_.id as id277_, t_users0_.balance as balance277_, t_users0_.business_registration_money as business3_277_, t_users0_.company as company277_, t_users0_.company_address as company5_277_, t_users0_.fax_number as fax6_277_, t_users0_.id_number as id7_277_, t_users0_.mobile as mobile277_, t_users0_.name as name277_, t_users0_.office_telephone as office10_277_, t_users0_.password as password277_, t_users0_.photo as photo277_, t_users0_.postcode as postcode277_, t_users0_.reality_name as reality14_277_, t_users0_.tax_no as tax15_277_, t_users0_.time as time277_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2213452
+2018-03-16 16:50:38,855 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2213462
+2018-03-16 16:50:40,140 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2214747
+2018-03-16 16:50:40,141 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2214748
+2018-03-16 16:50:40,144 DEBUG ~ select t_users0_.id as id277_, t_users0_.balance as balance277_, t_users0_.business_registration_money as business3_277_, t_users0_.company as company277_, t_users0_.company_address as company5_277_, t_users0_.fax_number as fax6_277_, t_users0_.id_number as id7_277_, t_users0_.mobile as mobile277_, t_users0_.name as name277_, t_users0_.office_telephone as office10_277_, t_users0_.password as password277_, t_users0_.photo as photo277_, t_users0_.postcode as postcode277_, t_users0_.reality_name as reality14_277_, t_users0_.tax_no as tax15_277_, t_users0_.time as time277_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2214751
+2018-03-16 16:50:40,149 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2214756
+2018-03-16 16:50:40,408 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2215015
+2018-03-16 16:50:40,410 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.verifyLogin  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2215017
+2018-03-16 16:50:40,415 DEBUG ~ select t_users0_.id as id277_, t_users0_.balance as balance277_, t_users0_.business_registration_money as business3_277_, t_users0_.company as company277_, t_users0_.company_address as company5_277_, t_users0_.fax_number as fax6_277_, t_users0_.id_number as id7_277_, t_users0_.mobile as mobile277_, t_users0_.name as name277_, t_users0_.office_telephone as office10_277_, t_users0_.password as password277_, t_users0_.photo as photo277_, t_users0_.postcode as postcode277_, t_users0_.reality_name as reality14_277_, t_users0_.tax_no as tax15_277_, t_users0_.time as time277_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215022
+2018-03-16 16:50:40,419 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215026
+2018-03-16 16:50:40,866 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2215473
+2018-03-16 16:50:40,868 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.logining  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2215475
+2018-03-16 16:50:40,869 DEBUG ~ select t_system_o0_.id as id288_, t_system_o0_._key as column2_288_, t_system_o0_._value as column3_288_, t_system_o0_.description as descript4_288_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215476
+2018-03-16 16:50:40,886 DEBUG ~ select t_users0_.id as id277_, t_users0_.balance as balance277_, t_users0_.business_registration_money as business3_277_, t_users0_.company as company277_, t_users0_.company_address as company5_277_, t_users0_.fax_number as fax6_277_, t_users0_.id_number as id7_277_, t_users0_.mobile as mobile277_, t_users0_.name as name277_, t_users0_.office_telephone as office10_277_, t_users0_.password as password277_, t_users0_.photo as photo277_, t_users0_.postcode as postcode277_, t_users0_.reality_name as reality14_277_, t_users0_.tax_no as tax15_277_, t_users0_.time as time277_ from t_users t_users0_ where t_users0_.name=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215493
+2018-03-16 16:50:40,889 DEBUG ~ insert into t_user_events (descrption, ip, time, type_id, user_id) values (?, ?, ?, ?, ?)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215496
+2018-03-16 16:50:41,076 DEBUG ~ 正在执行ation请求命令：m.front.invest.InvestAction.investList  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2215683
+2018-03-16 16:50:41,086 DEBUG ~ select * from t_bids where `t_bids`.`status` IN  (1, 3, 4) order by loan_schedule,t_bids.product_id desc limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215693
+2018-03-16 16:50:41,105 DEBUG ~ select count(1) as result  from t_bids where `t_bids`.`status` IN  (1, 3, 4)  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215712
+2018-03-16 16:50:41,239 DEBUG ~ select t_system_o0_.id as id288_, t_system_o0_._key as column2_288_, t_system_o0_._value as column3_288_, t_system_o0_.description as descript4_288_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215846
+2018-03-16 16:50:41,276 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215883
+2018-03-16 16:50:41,279 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215886
+2018-03-16 16:50:41,281 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2215888
+2018-03-16 16:50:48,053 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2222660
+2018-03-16 16:50:48,054 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.registerMobile  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2222661
+2018-03-16 16:50:48,063 DEBUG ~ select t_content_0_.content as col_0_0_ from t_content_news t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2222670
+2018-03-16 16:50:48,263 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2222870
+2018-03-16 16:50:48,266 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2222873
+2018-03-16 16:50:48,270 DEBUG ~ select t_content_0_.name as col_0_0_ from t_content_news_types t_content_0_ where t_content_0_.id=? limit ?  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 2222877
+2018-03-16 16:50:48,859 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2223466
+2018-03-16 16:50:48,860 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.setCode  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2223467
+2018-03-16 16:50:49,442 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2224049
+2018-03-16 16:50:49,443 DEBUG ~ 正在执行ation请求命令：m.front.account.LoginAndRegisterAction.getImg  ~ play.Logger.debug(Logger.java:232) ~ play ~ 2224050
+2018-03-16 17:15:17,400 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 17:15:17,850 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 450
+2018-03-16 17:15:17,960 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 560
+2018-03-16 17:15:43,684 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 26284
+2018-03-16 17:15:57,308 ERROR ~ 
+
+@77a7fpfmd
+Internal Server Error (500) for request GET /
+
+Oops: DuplicateMemberException
+An unexpected error occured caused by exception DuplicateMemberException: duplicate method: count in models.t_bills
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 39908
+play.exceptions.UnexpectedException: While applying play.db.jpa.JPAPlugin@1fec306b on models.t_bills
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:556)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:235)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:167)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:431)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: javassist.bytecode.DuplicateMemberException: duplicate method: count in models.t_bills
+	at javassist.bytecode.ClassFile.testExistingMethod(ClassFile.java:593)
+	at javassist.bytecode.ClassFile.addMethod(ClassFile.java:577)
+	at javassist.CtClassType.addMethod(CtClassType.java:1235)
+	at play.db.jpa.JPAEnhancer.enhanceThisClass(JPAEnhancer.java:29)
+	at play.db.jpa.JPAPlugin.enhance(JPAPlugin.java:102)
+	at play.plugins.PluginCollection.enhance(PluginCollection.java:551)
+	... 7 more
+2018-03-16 17:15:57,330 ERROR ~ 
+
+@77a7fpfmi
+Error during the 500 response generation
+
+Template not found (In /app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 39930
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:784)
+	at Invocation.HTTP Request(Play!)
+2018-03-16 17:38:18,230 INFO  ~ Starting E:\myCode\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-16 17:38:19,353 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1123
+2018-03-16 17:38:19,474 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1244
+2018-03-16 17:38:32,517 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 14287
+2018-03-16 17:39:03,213 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 44983
+2018-03-16 17:39:05,947 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 47717
+2018-03-16 17:39:06,529 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 48299
+2018-03-16 17:39:06,879 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 48649
+2018-03-16 17:39:07,025 ERROR ~ 
+
+@77a7j0kbh
+Error during job execution (jobs.Bootstrap)
+
+Oops: VerifyError
+An unexpected error occured caused by exception VerifyError: Inconsistent stackmap frames at branch target 138 Exception Details:   Location:     business/newr/User.withdrawalFee(D)D @65: ifle   Reason:     Current frame's stack size doesn't match stackmap.   Current Frame:     bci: @65     flags: { }     locals: { double, double_2nd, 'business/BackstageSet', 'business/BackstageSet', double, double_2nd }     stack: { double, double_2nd, integer }   Stackmap Frame:     bci: @138     flags: { }     locals: { double, double_2nd }     stack: { top, double, double_2nd }   Bytecode:     0000000: b805 3f4d 2c4e 0336 042d 131a 6413 1a66     0000010: 131a 68b8 1a6a c003 82b6 1a6c 3604 1504     0000020: 8726 2c4e 0e39 042d 131a 6d13 1a6e 131a     0000030: 6fb8 1a71 c000 6cb6 1a73 3904 1804 670e     0000040: 979e 0049 262c 4e0e 3904 2d13 1a74 131a     0000050: 7513 1a76 b81a 78c0 006c b61a 7a39 0418     0000060: 0467 2c4e 0e39 042d 131a 7b13 1a7c 131a     0000070: 7db8 1a7f c000 6cb6 1a81 3904 1804 6b14     0000080: 054e 6f05 b805 50a7 0004 0e63 af          Stackmap Table:     full_frame(@138,{Double},{Top,Double})     full_frame(@139,{Double},{Top,Double,Top}) 
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 48795
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:244)
+	at play.jobs.Job.onException(Job.java:124)
+	at play.jobs.Job.call(Job.java:163)
+	at Invocation.Job(Play!)
+Caused by: java.lang.VerifyError: Inconsistent stackmap frames at branch target 138
+Exception Details:
+  Location:
+    business/newr/User.withdrawalFee(D)D @65: ifle
+  Reason:
+    Current frame's stack size doesn't match stackmap.
+  Current Frame:
+    bci: @65
+    flags: { }
+    locals: { double, double_2nd, 'business/BackstageSet', 'business/BackstageSet', double, double_2nd }
+    stack: { double, double_2nd, integer }
+  Stackmap Frame:
+    bci: @138
+    flags: { }
+    locals: { double, double_2nd }
+    stack: { top, double, double_2nd }
+  Bytecode:
+    0000000: b805 3f4d 2c4e 0336 042d 131a 6413 1a66
+    0000010: 131a 68b8 1a6a c003 82b6 1a6c 3604 1504
+    0000020: 8726 2c4e 0e39 042d 131a 6d13 1a6e 131a
+    0000030: 6fb8 1a71 c000 6cb6 1a73 3904 1804 670e
+    0000040: 979e 0049 262c 4e0e 3904 2d13 1a74 131a
+    0000050: 7513 1a76 b81a 78c0 006c b61a 7a39 0418
+    0000060: 0467 2c4e 0e39 042d 131a 7b13 1a7c 131a
+    0000070: 7db8 1a7f c000 6cb6 1a81 3904 1804 6b14
+    0000080: 054e 6f05 b805 50a7 0004 0e63 af       
+  Stackmap Table:
+    full_frame(@138,{Double},{Top,Double})
+    full_frame(@139,{Double},{Top,Double,Top})
+
+	at business.BackstageSet.<clinit>(BackstageSet.java:178)
+	at jobs.Bootstrap.doJob(Bootstrap.java:21)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+2018-03-16 17:39:08,178 ERROR ~ 
+
+@77a7j0kbi
+Internal Server Error (500) for request GET /
+
+Oops: VerifyError
+An unexpected error occured caused by exception VerifyError: Inconsistent stackmap frames at branch target 138 Exception Details:   Location:     business/newr/User.withdrawalFee(D)D @65: ifle   Reason:     Current frame's stack size doesn't match stackmap.   Current Frame:     bci: @65     flags: { }     locals: { double, double_2nd, 'business/BackstageSet', 'business/BackstageSet', double, double_2nd }     stack: { double, double_2nd, integer }   Stackmap Frame:     bci: @138     flags: { }     locals: { double, double_2nd }     stack: { top, double, double_2nd }   Bytecode:     0000000: b805 3f4d 2c4e 0336 042d 131a 6413 1a66     0000010: 131a 68b8 1a6a c003 82b6 1a6c 3604 1504     0000020: 8726 2c4e 0e39 042d 131a 6d13 1a6e 131a     0000030: 6fb8 1a71 c000 6cb6 1a73 3904 1804 670e     0000040: 979e 0049 262c 4e0e 3904 2d13 1a74 131a     0000050: 7513 1a76 b81a 78c0 006c b61a 7a39 0418     0000060: 0467 2c4e 0e39 042d 131a 7b13 1a7c 131a     0000070: 7db8 1a7f c000 6cb6 1a81 3904 1804 6b14     0000080: 054e 6f05 b805 50a7 0004 0e63 af          Stackmap Table:     full_frame(@138,{Double},{Top,Double})     full_frame(@139,{Double},{Top,Double,Top}) 
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 49948
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.JobsPlugin.afterApplicationStart(JobsPlugin.java:131)
+	at play.plugins.PluginCollection.afterApplicationStart(PluginCollection.java:531)
+	at play.Play.start(Play.java:554)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.VerifyError: Inconsistent stackmap frames at branch target 138
+Exception Details:
+  Location:
+    business/newr/User.withdrawalFee(D)D @65: ifle
+  Reason:
+    Current frame's stack size doesn't match stackmap.
+  Current Frame:
+    bci: @65
+    flags: { }
+    locals: { double, double_2nd, 'business/BackstageSet', 'business/BackstageSet', double, double_2nd }
+    stack: { double, double_2nd, integer }
+  Stackmap Frame:
+    bci: @138
+    flags: { }
+    locals: { double, double_2nd }
+    stack: { top, double, double_2nd }
+  Bytecode:
+    0000000: b805 3f4d 2c4e 0336 042d 131a 6413 1a66
+    0000010: 131a 68b8 1a6a c003 82b6 1a6c 3604 1504
+    0000020: 8726 2c4e 0e39 042d 131a 6d13 1a6e 131a
+    0000030: 6fb8 1a71 c000 6cb6 1a73 3904 1804 670e
+    0000040: 979e 0049 262c 4e0e 3904 2d13 1a74 131a
+    0000050: 7513 1a76 b81a 78c0 006c b61a 7a39 0418
+    0000060: 0467 2c4e 0e39 042d 131a 7b13 1a7c 131a
+    0000070: 7db8 1a7f c000 6cb6 1a81 3904 1804 6b14
+    0000080: 054e 6f05 b805 50a7 0004 0e63 af       
+  Stackmap Table:
+    full_frame(@138,{Double},{Top,Double})
+    full_frame(@139,{Double},{Top,Double,Top})
+
+	at business.BackstageSet.<clinit>(BackstageSet.java:178)
+	at jobs.Bootstrap.doJob(Bootstrap.java:21)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+2018-03-16 17:39:09,072 DEBUG ~ select t_system_o0_.id as id36_, t_system_o0_._key as column2_36_, t_system_o0_._value as column3_36_, t_system_o0_.description as descript4_36_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 50842
+2018-03-16 17:39:09,093 ERROR ~ 
+
+@77a7j0kbj
+Error during job execution (jobs.Bootstrap)
+
+Oops: ExceptionInInitializerError
+An unexpected error occured caused by exception ExceptionInInitializerError: null
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 50863
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:244)
+	at play.jobs.Job.onException(Job.java:124)
+	at play.jobs.Job.call(Job.java:163)
+	at Invocation.Job(Play!)
+Caused by: java.lang.ExceptionInInitializerError
+	at jobs.Bootstrap.doJob(Bootstrap.java:21)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.ClassCastException: models.t_system_options cannot be cast to models.t_system_options
+	at business.BackstageSet.queryBackstageSet(BackstageSet.java:1199)
+	at business.BackstageSet.<clinit>(BackstageSet.java:174)
+	... 4 more
+2018-03-16 17:39:09,144 ERROR ~ 
+
+@77a7j0kbk
+Internal Server Error (500) for request GET /
+
+Oops: ExceptionInInitializerError
+An unexpected error occured caused by exception ExceptionInInitializerError: null
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 50914
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.jobs.JobsPlugin.afterApplicationStart(JobsPlugin.java:131)
+	at play.plugins.PluginCollection.afterApplicationStart(PluginCollection.java:531)
+	at play.Play.start(Play.java:554)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.ExceptionInInitializerError
+	at jobs.Bootstrap.doJob(Bootstrap.java:21)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.lang.ClassCastException: models.t_system_options cannot be cast to models.t_system_options
+	at business.BackstageSet.queryBackstageSet(BackstageSet.java:1199)
+	at business.BackstageSet.<clinit>(BackstageSet.java:174)
+	... 4 more

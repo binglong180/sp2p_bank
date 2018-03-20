@@ -1,0 +1,23 @@
+2018-03-06 11:06:58,408 INFO  ~ Starting D:\workspaceNewr\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-06 11:06:59,924 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1516
+2018-03-06 11:07:00,092 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1684
+2018-03-06 17:29:00,970 INFO  ~ Starting D:\workspaceNewr\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-06 17:29:02,834 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1864
+2018-03-06 17:29:03,013 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 2043
+2018-03-06 17:29:26,088 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 25118
+2018-03-06 17:30:01,258 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 60288
+2018-03-06 17:30:04,587 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 63617
+2018-03-06 17:30:05,181 DEBUG ~ select t_system_o0_.id as id41_, t_system_o0_._key as column2_41_, t_system_o0_._value as column3_41_, t_system_o0_.description as descript4_41_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 64211
+2018-03-06 17:30:05,392 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 64422
+2018-03-06 17:30:05,568 DEBUG ~ select t_dict_ad_0_.id as id23_, t_dict_ad_0_.name as name23_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 64598
+2018-03-06 17:30:05,606 DEBUG ~ select t_dict_ad_0_.id as id68_, t_dict_ad_0_.name as name68_, t_dict_ad_0_.province_id as province3_68_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 64636
+2018-03-06 23:06:11,958 INFO  ~ Starting D:\workspaceNewr\sp2p_bank  ~ play.Logger.info(Logger.java:289) ~ play ~ 0
+2018-03-06 23:06:13,763 WARN  ~ You're running Play! in DEV mode  ~ play.Logger.warn(Logger.java:344) ~ play ~ 1805
+2018-03-06 23:06:13,946 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...  ~ play.Logger.info(Logger.java:289) ~ play ~ 1988
+2018-03-06 23:06:54,629 WARN  ~ Ignoring  (static params must be specified as key:'value',...)  ~ play.Logger.warn(Logger.java:344) ~ play ~ 42671
+2018-03-06 23:07:12,160 INFO  ~ Connected to jdbc:mysql://127.0.0.1/p2p_bank?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci  ~ play.Logger.info(Logger.java:289) ~ play ~ 60202
+2018-03-06 23:07:16,024 INFO  ~ Application 'sp2p_bank' is now started !  ~ play.Logger.info(Logger.java:289) ~ play ~ 64066
+2018-03-06 23:07:17,945 DEBUG ~ select t_system_o0_.id as id41_, t_system_o0_._key as column2_41_, t_system_o0_._value as column3_41_, t_system_o0_.description as descript4_41_ from t_system_options t_system_o0_ order by t_system_o0_.id  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 65987
+2018-03-06 23:07:18,097 DEBUG ~ select t_content_0_._key as col_0_0_, t_content_0_.title as col_1_0_, t_content_0_.url as col_2_0_, t_content_0_.target as col_3_0_ from t_content_advertisements_links t_content_0_ where t_content_0_.status=0 order by t_content_0_._order  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 66139
+2018-03-06 23:07:18,125 DEBUG ~ select t_dict_ad_0_.id as id23_, t_dict_ad_0_.name as name23_ from t_dict_ad_provinces t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 66167
+2018-03-06 23:07:18,133 DEBUG ~ select t_dict_ad_0_.id as id68_, t_dict_ad_0_.name as name68_, t_dict_ad_0_.province_id as province3_68_ from t_dict_ad_citys t_dict_ad_0_  ~ org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111) ~ org.hibernate.SQL ~ 66175

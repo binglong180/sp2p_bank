@@ -1,0 +1,312 @@
+2018-02-08 22:31:42,484 ERROR ~ 
+
+@7707ap0a7
+Internal Server Error (500) for request GET /newr/front/home
+
+No route found (In /app/views/newr/front/NewHomeAction/home.html around line null)
+No route able to invoke action newr.front.invest.InvestAction.addAutoInvest was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 78696
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.newr.front.NewHomeAction.home(NewHomeAction.java:94)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-02-08 22:46:58,789 ERROR ~ models.t_statistic_cps cannot be cast to models.t_statistic_cps  ~ play.Logger.error(Logger.java:399) ~ play ~ 995001
+2018-02-08 22:46:58,822 ERROR ~ org.hibernate.PropertyAccessException: could not get a field value by reflection getter of models.t_statistic_cps.bid_amount  ~ play.Logger.error(Logger.java:399) ~ play ~ 995034
+2018-02-08 22:46:59,236 ERROR ~ 
+
+@7707ap0a8
+Error during job execution (jobs.SmsSend)
+
+Execution exception (In /app/business/BackstageSet.java around line 187)
+ClassCastException occured : business.BackstageSet cannot be cast to business.BackstageSet
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 995448
+play.exceptions.JavaExecutionException: business.BackstageSet cannot be cast to business.BackstageSet
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.ClassCastException: business.BackstageSet cannot be cast to business.BackstageSet
+	at business.BackstageSet.getCurrentBackstageSet(BackstageSet.java:187)
+	at business.TemplateSms.dealSmsTask(TemplateSms.java:322)
+	at jobs.SmsSend.doJob(SmsSend.java:20)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+2018-02-08 22:46:59,552 ERROR ~ 
+
+@7707ap0a9
+Error during job execution (jobs.EmailSend)
+
+Execution exception (In /app/business/BackstageSet.java around line 187)
+ClassCastException occured : business.BackstageSet cannot be cast to business.BackstageSet
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 995764
+play.exceptions.JavaExecutionException: business.BackstageSet cannot be cast to business.BackstageSet
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.ClassCastException: business.BackstageSet cannot be cast to business.BackstageSet
+	at business.BackstageSet.getCurrentBackstageSet(BackstageSet.java:187)
+	at business.TemplateEmail.dealEmailTask(TemplateEmail.java:468)
+	at jobs.EmailSend.doJob(EmailSend.java:21)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+2018-02-08 23:02:35,969 ERROR ~ 
+
+@7707ap0ac
+Internal Server Error (500) for request GET /newr/front/account/home
+
+No route found (In /app/views/newr/common/leftMenu.html around line 26)
+No route able to invoke action newr.front.account.FundsManage.recharge was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 1932181
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.FastTags._include(FastTags.java:415)
+	at play.templates.FastTags$_include.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at Template_1005$_run_closure1.doCall(home.html:18)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:272)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:877)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at Template_1005$_run_closure1.doCall(home.html)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:272)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:877)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:106)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.access$400(GroovyCategorySupport.java:64)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:246)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.use(DefaultGroovyMethods.java:358)
+	at org.codehaus.groovy.runtime.dgm$895.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoMetaMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:308)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:52)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at Template_1005.run(home.html:2)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.newr.front.account.AccountHome.home(AccountHome.java:80)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-02-08 23:04:04,597 ERROR ~ 
+
+@7707ap0af
+Internal Server Error (500) for request GET /newr/front/account/home
+
+No route found (In /app/views/newr/common/leftMenu.html around line 62)
+No route able to invoke action newr.front.invest.InvestAction.addAutoInvest was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 2020809
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.FastTags._include(FastTags.java:415)
+	at play.templates.FastTags$_include.call(Unknown Source)
+	at Template_1005$_run_closure1.doCall(home.html:18)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:272)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:877)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at Template_1005$_run_closure1.doCall(home.html)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:272)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:877)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:106)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.access$400(GroovyCategorySupport.java:64)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:246)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.use(DefaultGroovyMethods.java:358)
+	at org.codehaus.groovy.runtime.dgm$895.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoMetaMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:308)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at Template_1005.run(home.html:2)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.newr.front.account.AccountHome.home(AccountHome.java:80)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-02-08 23:04:49,295 ERROR ~ 
+
+@7707ap0ai
+Internal Server Error (500) for request GET /newr/front/account/home
+
+No route found (In /app/views/newr/front/account/AccountHome/home.html around line 89)
+No route able to invoke action newr.front.account.FundsManage.recharge was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 2065507
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.newr.front.account.AccountHome.home(AccountHome.java:80)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-02-08 23:07:51,419 ERROR ~ 
+
+@7707ap0al
+Internal Server Error (500) for request GET /newr/front/home
+
+No route found (In /app/views/newr/front/NewHomeAction/home.html around line null)
+No route able to invoke action newr.front.account.FundsManage.recharge was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 2247631
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.newr.front.NewHomeAction.home(NewHomeAction.java:91)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-02-08 23:07:55,537 ERROR ~ 
+
+@7707ap0ao
+Internal Server Error (500) for request GET /newr/front/home
+
+No route found (In /app/views/newr/front/NewHomeAction/home.html around line null)
+No route able to invoke action newr.front.account.FundsManage.recharge was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 2251749
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.newr.front.NewHomeAction.home(NewHomeAction.java:91)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-02-08 23:08:07,942 ERROR ~ 
+
+@7707ap0b1
+Internal Server Error (500) for request GET /newr/front/home
+
+No route found (In /app/views/newr/front/NewHomeAction/home.html around line null)
+No route able to invoke action newr.front.account.FundsManage.recharge was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 2264154
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.newr.front.NewHomeAction.home(NewHomeAction.java:91)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-02-08 23:19:16,042 ERROR ~ 
+
+@7707ap0b4
+Internal Server Error (500) for request GET /newr/front/invest/immediatelyInvest?bidId=135
+
+No route found (In /app/views/newr/front/invest/InvestAction/immediatelyInvest.html around line null)
+No route able to invoke action newr.front.account.FundsManage.recharge was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 2932254
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.newr.front.invest.InvestAction.immediatelyInvest(InvestAction.java:186)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+2018-02-08 23:22:17,328 ERROR ~ 
+
+@7707ap0b7
+Internal Server Error (500) for request GET /newr/front/invest/immediatelyInvest?bidId=135
+
+No route found (In /app/views/newr/front/invest/InvestAction/immediatelyInvest.html around line null)
+No route able to invoke action newr.front.account.FundsManage.recharge was found.
+  ~ play.Logger.niceThrowable(Logger.java:570) ~ play ~ 3113540
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.newr.front.invest.InvestAction.immediatelyInvest(InvestAction.java:186)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
