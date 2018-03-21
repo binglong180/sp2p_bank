@@ -24,9 +24,15 @@ GET    /m/check      															m.front.account.CheckAction.check
 
 #注册、登录、修改密码
 GET   /m/login                          										m.front.account.LoginAndRegisterAction.login
-*   /m/logining                          									m.front.account.LoginAndRegisterAction.logining
+*   /m/logining                          										m.front.account.LoginAndRegisterAction.logining
 * /m/front/account/verifyLogin                                                  m.front.account.loginAndRegisterAction.verifyLogin
 *    /m/logout                          										m.front.account.LoginAndRegisterAction.logout
+#Ajax判断用户是否登录
+GET /m/isLogin  																m.front.account.LoginAndRegisterAction.isLogin
+#Ajax判断用户是否绑卡
+GET /m/isBindBank																m.front.account.FundsManageAction.isBindBank
+
+
 GET  /m/registerMobile                       									m.front.account.LoginAndRegisterAction.registerMobile
 GET  /m/agreement                       										m.front.account.LoginAndRegisterAction.agreement
 GET  /m/register                       											m.front.account.LoginAndRegisterAction.register

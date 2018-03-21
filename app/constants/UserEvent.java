@@ -2,6 +2,13 @@ package constants;
 
 public class UserEvent {
 	
+	/*===============用户账户银行卡绑定状态===================*/
+	
+	public static final int BIND_BANK = 1; 		// 已绑卡
+	public static final int BIND_BANK_NOT = 0; 	// 没绑卡
+	
+	
+	
 	/*命名规范：添加   ADD  修改 EDIT 删除 DELETE*/
 	
 	public static final int REGISTER = 1; //注册
@@ -47,6 +54,10 @@ public class UserEvent {
 	public static final int IPS_BID_AUTH_NO = 40; // 添加自动投标签约号
 	public static final int IPS_REPAY_AUTH_NO = 41; // 添加自动还款签约号
 	public static final int ROLLBACK_WITHDRAWALT = 42; // 提现回退
+	
+	
+	
+	
 	
 	/*----------站内信-------------*/
 	public static final int MARK_MSG_READED = 101; 			// 标记为已读

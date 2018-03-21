@@ -32,6 +32,7 @@ import utils.ErrorInfo;
 import utils.PageBean;
 import business.newr.User;
 import business.newr.UserBankAccounts;
+import constants.UserEvent;
 import constants.newr.Constants;
 import controllers.newr.BaseController;
 import controllers.newr.SubmitRepeat;
@@ -47,6 +48,25 @@ import cpcn.institution.tools.util.StringUtil;
  */
 @With({ SubmitRepeat.class})
 public class FundsManageAction extends BaseController {
+	/**
+	 * 查询用户银行卡绑定情况
+	 * niu
+	 * 1.绑定
+	 * 0.未绑定
+	 * 
+	 */
+	public static void isBindBank(){
+		JSONObject data = new JSONObject();
+		int result=UserEvent.BIND_BANK_NOT;
+		long userId=User.currUser().id;
+		if(UserBankAccounts.queryUserAllBankAccount(userId).size()>=1){
+			result=UserEvent.BIND_BANK;
+		}		
+		data.put("result", result);
+		renderJSON(data);
+	}
+	
+	
 	
 	/**
 	 * 根据选择的银行卡id查询其信息
@@ -180,11 +200,20 @@ public class FundsManageAction extends BaseController {
                  .setParameter(1, SMSValidationCode).setParameter(2, id).executeUpdate();
                 success=true;
             }
+            
+     
+            
 		} catch (Exception e) {
 			JPA.setRollbackOnly();
 			e.printStackTrace();
 			Logger.error("绑卡短信验证失败：", e.getStackTrace());
 			success=false;
+		}
+        
+        //跳转回原来位置
+        String successURl = (String)play.cache.Cache.get("toUrl");				
+		if(successURl!=null ){
+			redirect(successURl);
 		}
         render(success);
 	}
@@ -311,11 +340,16 @@ public class FundsManageAction extends BaseController {
 	}
 	/**
 	 * 查询银行编号
+	 * niu
 	 */
 	public static void findBankCode(){
 		List<t_dict_banks_col> banks = t_dict_banks_col.findAll();
 		renderJSON(banks);
 	}
+	/**
+	 * 显示银行卡信息
+	 * niu
+	 */
 	public static void myCard(){
 		long userId = User.currUser().id;
 		List<UserBankAccounts> banks=UserBankAccounts.queryUserAllBankAccount(userId);
@@ -325,5 +359,6 @@ public class FundsManageAction extends BaseController {
 		List<t_dict_ad_provinces> provices = t_dict_ad_provinces.findAll(); 
 		render(provices);
 	}
+	
 	
 }

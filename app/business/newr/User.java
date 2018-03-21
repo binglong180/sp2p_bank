@@ -187,6 +187,17 @@ public class User implements Serializable{
 		
 		return error.code;
 	}
+	/**
+	 * 判断是否登录
+	 */
+	public static  int isLogin(){
+		int data=UserEvent.LOGOUT;//退出3
+		User user = currUser();
+		if(user!=null){
+			data=UserEvent.LOGIN;//登录2
+		}
+		return data;
+	}
 	
 	/**
 	 * 登录

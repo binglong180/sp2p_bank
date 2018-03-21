@@ -50,6 +50,16 @@ import cpcn.institution.tools.util.StringUtil;
 @With(DSecurity.class)
 public class LoginAndRegisterAction extends BaseController {
 
+	
+	/**
+	 * 判断用户是否登录
+	 */
+	public static void isLogin(){
+		JSONObject data=new JSONObject();
+		int result=User.isLogin();
+		data.put("result",result);
+		renderJSON(data);
+	}
 	/**
 	 * 跳转到登录页面
 	 */
@@ -66,6 +76,11 @@ public class LoginAndRegisterAction extends BaseController {
  		render();
 	}
 
+	
+	
+	
+	
+	
 	public static void logout() {
 		User user = User.currUser();
 

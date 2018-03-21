@@ -30,7 +30,7 @@ public class BillInvests implements Serializable{
 	private long _id;
 	
 	public long userId;
-	public long bidId;
+	public long bidId;//
 	public int period;
 	public String title;
 	public Date receiveTime;

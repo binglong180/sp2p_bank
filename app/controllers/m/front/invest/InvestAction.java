@@ -85,15 +85,17 @@ public class InvestAction extends BaseController {
 		ErrorInfo error = new ErrorInfo();
 		Bid bid = new Bid();
 		bid.id = bidId;
-	
+		//票号
+		//bid.get
+		//SELECT ticket_no FROM `t_ticket` where id=1;
 		if (error.code < 0) {
 			render(Constants.ERROR_PAGE_PATH_FRONT);
 		}
 		User user = User.currUser();
-
+		
 		String uuid = CaptchaUtil.getUUID(); // 防重复提交UUID
 		boolean flag = false;
-
+		
 		if (StringUtils.isNotBlank(showBox)) {
 			showBox = Encrypt.decrypt3DES(showBox, bidId
 					+ Constants.ENCRYPTION_KEY);
@@ -124,13 +126,14 @@ public class InvestAction extends BaseController {
 		if (NumberUtil.isNumericInt(currPageStr)) {
 			currPage = Integer.parseInt(currPageStr);
 		}
-
+		
 		if (NumberUtil.isNumericInt(pageSizeStr)) {
 			pageSize = Integer.parseInt(pageSizeStr);
 		}
 		PageBean<t_bids> pageBean = new PageBean<t_bids>();
 		pageBean = Invest.queryAllBids( currPage,
 				pageSize, error);
+		
 		render(pageBean);
 	}
 	/**
