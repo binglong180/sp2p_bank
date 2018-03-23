@@ -180,7 +180,9 @@ public class FundsManageAction extends BaseController {
 		Long id = new Long(params.get("bindId")); 
 		String SMSValidationCode = params.get("code");
 		boolean success=false;
+		
         try {
+        	
         	t_user_bank_accounts bankAccount = t_user_bank_accounts.findById(id);
 			// 创建交易请求对象
 			Tx2532Request txRequest = new Tx2532Request();
@@ -194,28 +196,25 @@ public class FundsManageAction extends BaseController {
 					txRequest.getRequestSignature());
 			Tx2532Response tx2532Response = new Tx2532Response(respMsg[0], respMsg[1]);
 			Logger.info("[Tx2532_Message]=[" + tx2532Response.getResponsePlainText() + "]");
+			 
             if ("2000".equals(tx2532Response.getCode())&&30==tx2532Response.getStatus()
             		&&40==tx2532Response.getVerifyStatus()) {
                  JPA.em().createNativeQuery("update t_user_bank_accounts set verify_code=? where id=? ")
                  .setParameter(1, SMSValidationCode).setParameter(2, id).executeUpdate();
                 success=true;
+                
             }
-            
-     
-            
+           
 		} catch (Exception e) {
 			JPA.setRollbackOnly();
 			e.printStackTrace();
 			Logger.error("绑卡短信验证失败：", e.getStackTrace());
-			success=false;
 		}
         
-        //跳转回原来位置
-        String successURl = (String)play.cache.Cache.get("toUrl");				
-		if(successURl!=null ){
-			redirect(successURl);
-		}
-        render(success);
+		
+		render(success);
+		
+		
 	}
 	/**
 	 * 解绑银行卡

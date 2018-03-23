@@ -34,7 +34,6 @@ import utils.RegexUtils;
 import utils.SMSUtil;
 import utils.Security;
 import business.DictBanksDate;
-import business.News;
 import business.newr.User;
 import business.newr.UserBankAccounts;
 import constants.newr.Constants;
@@ -167,10 +166,8 @@ public class LoginAndRegisterAction extends BaseController {
 		String loginOrRegister = Constants.LOGIN_AREAL_FLAG;
 		
 		ErrorInfo error = new ErrorInfo();
-		String content = News.queryContent(Constants.NewsTypeId.REGISTER_AGREEMENT2, error);
 		flash.put("recommendUserName", nameForRecommend);
 		
-		render(loginOrRegister, content);
 	}
 	
 	/**

@@ -14,7 +14,8 @@ GET   /m/front/invest/investContract                                            
 GET   /m/front/invest/investListAjax                                         	m.front.invest.InvestAction.investListAjax
 #立即投资
 GET   /m/investDetail                                      				        m.front.invest.InvestAction.investDetail
-POST   /m/confirmInvest                      									m.front.invest.InvestAction.confirmInvest
+POST  /m/confirmInvest                      									m.front.invest.InvestAction.confirmInvest
+POST  /m/investVerifySMS														m.front.invest.InvestAction.investVerifySMS	
 #主动投标回调
 *   /m/payment/chinapnr/initiativeTender									 	newr.payment.hf.HfPaymentCallBackAction.initiativeTender
 #检查用户状态

@@ -17,7 +17,7 @@ import constants.Constants;
  */
 public class PaymentProxy implements PaymentInterface{
 	
-	private PaymentInterface payment = null;
+	private PaymentInterface payment = new HfPaymentImpl();;
 	
 	private static PaymentProxy proxy = new PaymentProxy();
 
@@ -29,26 +29,7 @@ public class PaymentProxy implements PaymentInterface{
 		return proxy;
 	}
 	
-	/**
-	 * 代理托管接口初始化，指定配置的被代理对象
-	 */
-	public void init(){
 
-		if(!Constants.IPS_ENABLE){  //普通网关
-	    	return;
-	    }
-		
-		Logger.info("####支付网关初始化...");
-		
-		//汇付初始化
-		if(Constants.TRUST_FUNDS_TYPE.equals("HF")){
-			Logger.info("####汇付天下支付网关加载中...");
-			payment = new HfPaymentImpl();
-			HfConstants.initSupport();
-		}
-	
-		Logger.info("####支付网关初始化完毕...");
-	}
 	
 	@Override
 	public Map<String, Object> register(ErrorInfo error,int client,  Object... obj){

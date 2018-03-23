@@ -123,6 +123,19 @@
 .bidinfo-bodythree .bidinfo-list:first-child{border-top:none!important;}
 .bidinfo-bodythree .bidinfo-list:last-child{border-bottom:none!important;}
 
+.bidinfo-popup{display:none; width:100%; height:100%; z-index:10; position:fixed; top:0; left:0; background:rgba(75,75,75,0.7);}
+.bidinfo-popup .bidinfo-popup-body{display:block; width:7.16rem; height:6.02rem; background:url(../images/firstep/bid-popup.png) no-repeat center; background-size:7.16rem 6.02rem; position:fixed; left:50%; top:50%; margin:-3.01rem 0 0 -3.58rem;}
+.bidinfo-popup .bidinfo-popup-body h4{display:table; height:0.8rem; line-height:0.8rem; color:#FFFFFF; font-size:0.28rem; margin:0.2rem 0 0 0.5rem;}
+.bidinfo-popup .bidinfo-popup-body h4 span{font-size:0.32rem; font-weight:bold;}
+.bidinfo-popup .bidinfo-popup-body .close{display:block; width:0.24rem; height:0.24rem; background:url(../images/firstep/bid-close.png) no-repeat center; background-size:0.24rem; position:absolute; right:0.5rem; top:0.45rem;}
+.bidinfo-popup .bidinfo-popup-body ul{display:block; width:6.22rem; margin:0.2rem auto;}
+.bidinfo-popup .bidinfo-popup-body ul li{display:table; width:100%; height:0.9rem; position:relative; border:1px solid #aaaaaa; border-radius:0.1rem;}
+.bidinfo-popup .bidinfo-popup-body ul li input{display:block; width:90%; height:0.5rem; margin:0.2rem auto; font-size:0.26rem; color:#787878;}
+.bidinfo-popup .bidinfo-popup-body ul li:last-child input{display:block; width:50%; margin-left:0.3rem;}
+.bidinfo-popup .bidinfo-popup-body ul li a{display:block; width:1.86rem; height:0.64rem; line-height:0.64rem; text-align:center; background:#da0022; color:#FFFFFF; font-size:0.28rem; position:absolute; right:0.15rem; top:50%; margin-top:-0.32rem;}
+.bidinfo-popup .bidinfo-popup-body ul li p{display:block; width:90%; margin:0 auto; line-height:0.9rem; font-size:0.26rem; color:#787878;}
+.bidinfo-popup .bidinfo-popup-body ul li p em{color:#da0022;}
+.bidinfo-popup .bidinfo-popup-body .bidinfo-popup-btn{display:block; width:4.84rem; height:0.84rem; line-height:0.84rem; font-size:0.32rem; color:#FFFFFF; text-align:center; background:#da0022; border-radius:0.1rem; margin:0.5rem auto 0 auto;}
 
 .footer{height:0.93rem;border-top:1px solid #ebebeb;position: fixed;bottom:0;width:7.5rem;left:50%;margin-left:-3.75rem;background:#f4f4f4;z-index:9;}
 .footer a{display:block;float:left;width:33%; border-left:1px solid #ebebeb; height:0.9rem; line-height:0.9rem; border-top:0.03rem solid #f4f4f4; text-align:center;color:#505050;font-size:0.3rem;}
@@ -144,4 +157,57 @@
 .bidlist .bidlist-border .bidlist-data03 span{display:block; color:#aaaaaa; font-size:0.26rem; padding-bottom:0.05rem}
 .bidlist .bidlist-border .bidlist-data03 span em{font-size:0.3rem}
 .bidlist .bidlist-border .bidlist-data03 p{font-size:0.26rem; color:#aaaaaa}
-.bidlist .bidlist-border{}
+
+.deal{display:table; width:96%; margin:0.2rem auto;}
+.deal h2{font-size:0.42rem; color:#000; text-align:center; padding:0.25rem}
+.deal h4{font-size:0.32rem; color:#333; text-align:center; padding:0.25rem}
+.deal p{font-size:0.24rem; color:#666; text-indent:0.32rem; line-height:0.42rem; padding-bottom:0.1rem;}
+.bid-deal{}
+.bid-deal h2{font-size:0.42rem; color:#000; text-align:center; padding:0.25rem}
+.bid-deal h4{display:table; width:90%; margin:0.02rem auto 0.2rem auto;font-size: 0.2rem; color: #333333;}
+.bid-deal h4 span{display:inline-block; border-bottom:1px solid #ccc; width:80%}
+.bid-deal-table{display:table;width:90%;margin:0.1rem auto;font-size:0.24rem;color:#333}
+.bid-deal-table>tbody>tr>td{padding:0.2rem 0.1rem;border:1px solid #d8d8d8;}
+.bid-deal p{display:table;width:90%;margin:0.02rem auto;text-indent:0.24rem;font-size:0.2rem;color:#333333;line-height:1.8;}
+.bid-deal h5{display:table;width:90%;margin:0.2rem auto 0.1rem auto;font-size:0.2rem;color:#333333;font-weight:bold;}
+
+
+
+
+
+
+.index-header{display:block; width:100%; height:0.9rem; position:relative; background:#fafafa;}
+.index-header .index-logo img{display:block; width:4.85rem; height:0.53rem; position:absolute; left:0.15rem; top:50%; margin-top:-0.26rem;}
+.index-header ul{position:absolute; right:0.15rem; top:50%; margin-top:-0.15rem;}
+.index-header ul li{float:left; height:0.3rem; line-height:0.3rem; border-left:1px solid #999999}
+.index-header ul li:first-child{border-left:none;}
+.index-header ul li a{display:table; width:100%; font-size:0.3rem; padding:0 0.15rem; color:#da0022}
+
+.banner{height:3rem;overflow:hidden;}
+.slideBox{ position:relative; overflow:hidden; margin:0 auto;  max-width:750px;height:3rem;}
+.slideBox .hd{ position:absolute; height:0.3rem; bottom:0.2rem; width:1.2rem; left:50%; margin-left:-0.6rem; background:#c6c6c6; z-index:1; border-radius:0.15rem;}
+.slideBox .hd li{float:left; display:block; width:0.15rem; height:0.15rem; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background:#FFFFFF; text-indent:-9999px; overflow:hidden; margin:0.07rem 0.08rem;}
+.slideBox .hd li:first-child{margin-left:0.2rem;}
+.slideBox .hd li.on{ background:#da0022; border:1px solid #FFFFFF; width:0.19rem; height:0.19rem; margin-top:0.05rem;}
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative; text-align:center;}
+.slideBox .bd li img{ background:url(../images/loading.gif) center center no-repeat;  vertical-align:top; width:100%; height:3rem;}
+.notice{display:table;width:100%;height:0.6rem;background:#FFFFFF; border-bottom:1px solid #e5e5e5; position:relative;}
+.notice div{display:block; width:4.2rem; height:0.4rem; margin-top:0.1rem; line-height:0.4rem; font-size:0.28rem; color:#646464; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.notice div ul{margin-left:0.15rem}
+.notice div ul li{display:table; width:100%; height:0.24rem; overflow:hidden; }
+.notice div ul li a{display:table; width:100%; color:#646464}
+
+.index-bid{display:block; width:100%; margin-bottom:1rem;}
+.index-bid h4{display:block; width:6.8rem; height:1.18rem; line-height:1.18rem; margin:0 auto; border-bottom:1px dashed #d2d2d2; text-align:center;}
+.index-bid h4 a{display:block; font-size:0.42rem; color:#da0022; text-decoration:underline;}
+.index-bid h4 a i{display:inline-block; width:0.17rem; height:0.28rem; background:url(../images/firstep/icon-left2.png) no-repeat center; background-size:0.17rem 0.28rem; margin-left:0.1rem}
+.index-bid .index-bidtext{display:block; width:6.8rem; margin:0 auto;}
+.index-bid .index-bidtext p{display:block; width:100%; margin:0.45rem auto; font-size:0.3rem; color:#646464; text-align:center;}
+.index-bid .index-bidtext h3{display:block; width:100%; text-align:center; font-size:0.85rem; color:#da0022;}
+.index-bid .index-bidtext h3 em{font-size:0.25rem;}
+.index-bid .index-bidtext ul{display:table; width:90%; margin:0.6rem auto;}
+.index-bid .index-bidtext ul li{float:left; width:50%; font-size:0.26rem; color:#aaaaaa;}
+.index-bid .index-bidtext ul li span{font-size:0.3rem; color:#505050;}
+.index-bid .index-bidtext ul li:last-child{text-align:right}
+.index-bid .index-bidtext a{display:block; width:6rem; height:0.85rem; margin:0 auto; border-radius:0.1rem; text-align:center; font-size:0.3rem; line-height:0.85rem; background:#da0022; color:#FFFFFF;}

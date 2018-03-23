@@ -189,6 +189,7 @@ public class User implements Serializable{
 	}
 	/**
 	 * 判断是否登录
+	 * 
 	 */
 	public static  int isLogin(){
 		int data=UserEvent.LOGOUT;//退出3

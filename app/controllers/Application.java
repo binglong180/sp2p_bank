@@ -24,7 +24,6 @@ import utils.ErrorInfo;
 import utils.ExcelUtils;
 import utils.FileUtil;
 import utils.PageBean;
-import business.News;
 import business.SystemUpgradeLogs;
 import business.newr.User;
 import constants.Constants;
@@ -166,9 +165,7 @@ public class Application extends BaseController {
 	}
 	
 	public static void vipAgreement() {
-		String agreement = News.queryVipAgreement();
 		
-		renderText(agreement);
 	}
 	
 	public static void logs(){

@@ -367,7 +367,7 @@ public class UserBankAccounts implements Serializable{
 		List<Long> idList = null;
 		
 		try{
-			idList = t_user_bank_accounts.find("select id from t_user_bank_accounts where user_id = ?", userId).fetch();
+			idList = t_user_bank_accounts.find("select id from t_user_bank_accounts where user_id =? and verify_code is not null", userId).fetch();
 		}catch(Exception e) {
 			e.printStackTrace();
 			Logger.info("查询用户所有银行卡信息时：" + e.getMessage());
@@ -463,7 +463,6 @@ public class UserBankAccounts implements Serializable{
 		if(account.id < 0 || account.userId != userId) {
 			error.code = -1;
 			error.msg = "请选择正确的银行账号";
-			
 			return false;
 		}
 		

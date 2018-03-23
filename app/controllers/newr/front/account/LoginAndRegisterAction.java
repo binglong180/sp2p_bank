@@ -26,7 +26,6 @@ import utils.SMSUtil;
 import utils.Security;
 import business.BottomLinks;
 import business.DealDetail;
-import business.News;
 import business.newr.User;
 
 import com.shove.security.Encrypt;
@@ -220,7 +219,6 @@ public class LoginAndRegisterAction extends BaseController {
 		String loginOrRegister = Constants.LOGIN_AREAL_FLAG;
 
 		ErrorInfo error = new ErrorInfo();
-		String content = News.queryContent(Constants.NewsTypeId.REGISTER_AGREEMENT2, error);
 		String name = "";
 		
 		if(!StringUtils.isBlank(un)){
@@ -235,7 +233,6 @@ public class LoginAndRegisterAction extends BaseController {
 		
 		flash.put("recommendUserName", name);
 
-		render(loginOrRegister, content);
 	}
 	
 	/**
@@ -245,10 +242,8 @@ public class LoginAndRegisterAction extends BaseController {
 		String loginOrRegister = Constants.LOGIN_AREAL_FLAG;
 		
 		ErrorInfo error = new ErrorInfo();
-		String content = News.queryContent(Constants.NewsTypeId.REGISTER_AGREEMENT2, error);
 		flash.put("recommendUserName", nameForRecommend);
 		
-		render(loginOrRegister, content);
 	}
 	
 	/**

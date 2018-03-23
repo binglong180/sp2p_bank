@@ -84,13 +84,9 @@ public class BottomLinks  implements Serializable{
 
 	public static Map<String, List<BottomLinks>> queryBottomLinks() {
 		
-		List<t_content_advertisements_links> links = null;
-				
-		String sql = "select new t_content_advertisements_links(_key, title, url, target)"
-				+ " from t_content_advertisements_links link where link.status = 0 order by link._order";
 		
 		try {
-			links = t_content_advertisements_links.find(sql).fetch();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			Logger.info("查询底部链接时：" + e.getMessage());
@@ -107,28 +103,6 @@ public class BottomLinks  implements Serializable{
 		
 		BottomLinks bottomLink = null;
 		
-		for(t_content_advertisements_links link : links) {
-			bottomLink = new BottomLinks();
-			
-			bottomLink.key = link._key;
-			bottomLink.title = link.title;
-			bottomLink.url = link.url;
-			bottomLink.target = link.target;
-			
-			if(OptionKeys.LABLE_BEGINNER_INTRODUCTION.equals(link._key)) {
-				introductionLinks.add(bottomLink);
-			}else if(OptionKeys.LABLE_ABOUT_LOAN.equals(link._key)) {
-				loanLinks.add(bottomLink);
-			}else if(OptionKeys.LABLE_ABOUT_FINANCING.equals(link._key)) {
-				financeLinks.add(bottomLink);
-			}else if(OptionKeys.LABLE_ABOUT_US.equals(link._key)) {
-				usLinks.add(bottomLink);
-			}else if(OptionKeys.LABLE_HELP_CENTRE.equals(link._key)) {
-				centreLinks.add(bottomLink);
-			}else{
-				supportLinks.add(bottomLink);
-			}
-		}
 		
 		
 		Map<String, List<BottomLinks>> bottomLinks = new HashMap<String, List<BottomLinks>>();

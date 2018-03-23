@@ -386,7 +386,7 @@ public class UserBankAccounts implements Serializable{
 		List<Long> idList = null;
 		
 		try{
-			idList = t_user_bank_accounts.find("select id from t_user_bank_accounts where user_id = ?", userId).fetch();
+			idList = t_user_bank_accounts.find("select id from t_user_bank_accounts where user_id = ? and verify_code is not null", userId).fetch();
 		}catch(Exception e) {
 			e.printStackTrace();
 			Logger.info("查询用户所有银行卡信息时：" + e.getMessage());

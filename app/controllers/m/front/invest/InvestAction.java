@@ -224,7 +224,13 @@ public class InvestAction extends BaseController {
 				 Long inveestId= (Long) resultMap.get("investId");
 				 String investsign = Security.addSign(inveestId, Constants.INVEST_ID_SIGN);
 				 String investUUid = CaptchaUtil.getUUID();
+				 JSONObject data = new JSONObject();
+				 data.put("seccuess", true);
+				 data.put("investsign",investsign);
+				 data.put("investUUid", investUUid);
+				 renderJSON(data);
 			}
+			
 		if(error.code > 0){
 			flash.put("amount", NumberUtil.amountFormat(investAmount));
 			String showBox = Encrypt.encrypt3DES(Constants.SHOW_BOX, bidId + Constants.ENCRYPTION_KEY);
@@ -233,6 +239,10 @@ public class InvestAction extends BaseController {
 			flash.error(error.msg);
 			investDetail(bidId, "");
 		}
+		 JSONObject data = new JSONObject();
+		 data.put("seccuess", false);
+		 data.put("errorMsg",error.msg);
+		 renderJSON(data);
 	}
 	/**
 	 * 投标记录分页ajax方法
