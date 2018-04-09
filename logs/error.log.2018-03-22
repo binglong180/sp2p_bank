@@ -1,0 +1,2 @@
+2018-03-22 14:58:27,822 ERROR ~ Table 'p2p_bank.t_content_advertisements_links' doesn't exist  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:234) ~ org.hibernate.util.JDBCExceptionReporter ~ 49444
+2018-03-22 15:04:57,221 ERROR ~ Table 'p2p_bank.t_content_advertisements_links' doesn't exist  ~ org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:234) ~ org.hibernate.util.JDBCExceptionReporter ~ 33504
